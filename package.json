@@ -1,0 +1,25 @@
+{
+  "name": "next-starter",
+  "version": "1.0.0",
+  "description": "a starter for next with everythin I use set up",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "export": "next export",
+    "build": "next build"
+  },
+  "author": "Gavyn Caldwell (gavmanweb@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^8.2.1",
+    "next": "^4.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "standard": "^10.0.3",
+    "styled-components": "^2.4.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
