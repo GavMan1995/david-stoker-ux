@@ -8,6 +8,10 @@ export const Hero = styled.section`
   width: 100$;
   background-color: ${gray};
   padding: 80px calc(50% - 612px);
+
+  @media(max-width: 800px) {
+    padding: 80px 24px;
+  }
 `
 
 export const HeroAside = styled.aside`
@@ -18,6 +22,16 @@ export const HeroAside = styled.aside`
   > h2 {
     max-width: 460px;
     color: ${gold}
+  }
+
+  @media(max-width: 800px) {
+    > h2 {
+      text-align: center;
+    }
+
+    > img {
+      margin-bottom: 80px;
+    }
   }
 `
 
@@ -58,7 +72,7 @@ export const CaseStudySection = styled.section`
     position: absolute;
     top: -34px;
     left: 0;
-    width: 138px;
+    width: 124px;
     height: 34px;
     background-color: #fff;
     border-radius: 24px 24px 0 0;
@@ -77,6 +91,10 @@ export const CaseStudySection = styled.section`
 
     > .case-study-tab {
       left: 30%;
+
+      @media(max-width: 800px) {
+        left: 20%;
+      }
     }
   `}
 
@@ -88,6 +106,10 @@ export const CaseStudySection = styled.section`
 
     > .case-study-tab {
       left: 40%;
+
+      @media(max-width: 800px) {
+        left: 20%;
+      }      
     }
   `}
 
@@ -99,6 +121,10 @@ export const CaseStudySection = styled.section`
 
     > .case-study-tab {
       left: 50%;
+
+      @media(max-width: 800px) {
+        left: 20%;
+      }
     }
   `}
 `
