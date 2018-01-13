@@ -15,8 +15,9 @@ export default class MyDocument extends Document {
         <Head>
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <link rel='stylesheet' href='/static/reset.css' />
+          <link rel='stylesheet' href='https://use.typekit.net/amm4yao.css' />
           <link rel='stylesheet' href='/static/typography.css' />
-          <title>Jordan River Insurance</title>
+          <title>David Stoker UX</title>
           {this.props.styleTags}
         </Head>
         <body>

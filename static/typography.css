@@ -1,53 +1,49 @@
 body, input {
   color: #1f242a;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 200;
   word-spacing: 2px;
 }
 
 h1, h2, h3, h4, h5, h6,
-p, li, span {
+p, li, span, i {
   margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-i {
-  font-family: sans-serif
+  font-family: "museo-sans", sans-serif;
+  font-weight: 200;
 }
 
 a, a * {
   color: #1f242a;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
 }
 
 h1, h1 * {
-  font-size: 35px;
+  font-size: 36px;
   font-weight: 800;
-  line-height: 1.429;
+  line-height: 1.45;
 }
 
 h2, h2 * {
-  font-size: 24px;
-  line-height: 1.167;
+  font-size: 26px;
+  line-height: 1.35;
 }
 
 h3, h3 * {
-  font-size: 18px;
-  line-height: 1.944;
+  font-size: 20px;
+  line-height: 1.38;
 }
 
 p, p *, li, li * {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 2.22;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.19;
 }
 
 small, small * {
-  font-size: 16px;
-  line-height: 1.786;
+  font-size: 12px;
+  line-height: 1.19;
 }
 
 label, label * {
