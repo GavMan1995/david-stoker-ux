@@ -19,7 +19,7 @@ export default () => {
           <h2>
             I’m an experienced, multi-disciplinary designer driven by a desire
             to create user-friendly products that make a difference
-            in people’s lives
+            in people’s lives.
           </h2>
         </HeroAside>
       </Hero>
