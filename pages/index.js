@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
 import Header from '../components/Header'
-import { Hero, HeroAside, CaseStudySection } from '../styles/pages/home'
+import { CaseStudySection } from '../styles/base'
+import { Hero, HeroAside } from '../styles/pages/home'
 
 export default () => {
   return (

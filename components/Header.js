@@ -1,17 +1,18 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 
-import { flexContainer, flexItem } from '../styles/tools/mixins'
+import { flexContainer } from '../styles/tools/mixins'
 import { gray, link } from '../styles/tools/colors'
 
-export default ({ home, case1, case2, case3 }) => {
-  console.log(home)
-  let Header = styled.header`
+export default ({ home, fixed }) => {
+  const Header = styled.header`
     ${flexContainer('space-between', 'center')}
     width: 100%;
     padding: 30px 117px;
     background-color: ${gray};
-    position: static;
+    top: 0;
+    left: 0;
+    z-index: 5;
 
     > img {
       width: 160px;
@@ -27,10 +28,10 @@ export default ({ home, case1, case2, case3 }) => {
   `
 
   return (
-    <Header>
+    <Header style={fixed ? {position: 'fixed'} : {}}>
       <Link href='/'>
         <img
-          src='../static/ux-logo.svg'
+          src='/static/ux-logo.svg'
           style={home ? {visibility: 'hidden'} : {}}
           alt='logo' />
       </Link>
