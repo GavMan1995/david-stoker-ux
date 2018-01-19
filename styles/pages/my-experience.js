@@ -1,12 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-import { darkGray, yellow } from '../tools/colors'
+import { gray, darkGray, yellow } from '../tools/colors'
 import { flexContainer, flexItem } from '../tools/mixins'
 
 export const TimelineContainer = styled.div`
   position: relative;
   width: 100%;
-  margin-top: 160px;
+  margin: 160px 0;
   background-color: #fff;
 
   &:after {
@@ -41,8 +41,22 @@ export const TimelineContainer = styled.div`
 `
 export const TimeLineSection = styled.section`
   ${flexContainer()}
-  padding: 80px calc(50% - 612px);
+  ${props => props.bottom ? 'padding: 0 calc(50% - 612px);' : 'padding: 80px calc(50% - 612px);'}
   position: relative;
+  
+  ${props => props.bottom && css`
+    ${flexContainer('center')};
+    padding-top: 80px;
+    z-index: 3;
+
+    > p {
+      width: 100%;
+      margin-bottom: 40px;
+      padding: 4px;
+      text-align: center;
+      background-color: #fff;
+    }
+  `}
 `
 export const TimeLineAside = styled.aside`
   ${flexItem('200px')};
@@ -66,8 +80,30 @@ export const TimeLineAside = styled.aside`
 
   > .side-img {
     position: absolute;
-    bottom: 0;
-    left: - 40px;
+    bottom: 20px;
+    left: -120px;
+  }
+
+  > .bottom-note {
+    position: absolute;
+    top: calc(100% + 40px);
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: ${gray};
+    color: ${darkGray};
+    text-align: center;
+
+    > p {
+      color: ${yellow};
+      padding-top: 20px;
+      font-size: 14px;
+      cursor: pointer;
+
+      > img {
+        margin-right: 10px;
+      }
+    }
   }
 
   &:before {

@@ -7,7 +7,8 @@ export const Hero = styled.section`
   ${flexContainer('flex-start', 'center')}
   width: 100$;
   background-color: ${gray};
-  padding: 80px calc(50% - 612px);
+  margin-top: 80px;
+  padding: 160px calc(50% - 612px);
 
   @media(max-width: 800px) {
     padding: 80px 24px;

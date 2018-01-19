@@ -1,6 +1,14 @@
 import Header from '../components/Header'
+import Link from 'next/link'
 
-import { TimelineContainer, TimeLineSection, TimeLineAside, AsidePlaceholder, MiddleText } from '../styles/pages/my-experience'
+import { Button } from '../styles/base'
+import {
+  TimelineContainer,
+  TimeLineSection,
+  TimeLineAside,
+  AsidePlaceholder,
+  MiddleText
+} from '../styles/pages/my-experience'
 
 export default () => {
   return (
@@ -17,6 +25,10 @@ export default () => {
             <img
               className='top-img'
               src='/static/my-experience/degree.png'
+              alt='David Stoker UX' />
+            <img
+              className='side-img'
+              src='/static/my-experience/degree-side.png'
               alt='David Stoker UX' />
             <h3>
               A degree in advertising and work as an art director
@@ -70,6 +82,10 @@ export default () => {
             <img
               className='top-img'
               src='/static/my-experience/photographer.png'
+              alt='David Stoker UX' />
+            <img
+              className='side-img'
+              src='/static/my-experience/photographer-side.png'
               alt='David Stoker UX' />
             <h3>
               Commercial photographer
@@ -126,6 +142,17 @@ export default () => {
               className='top-img'
               src='/static/my-experience/music.png'
               alt='David Stoker UX' />
+            <div className='bottom-note'>
+              <small>
+                If you’ve got nothing to do for the next 4:07 minutes,
+                have a listen to one of the tracks.
+              </small>
+
+              <p>
+                <img src='/static/my-experience/music.svg' alt='' />
+                THE CLIFFS OF DOONEEN
+              </p>
+            </div>
             <h3>
               Composed, recorded and produced an album
             </h3>
@@ -139,11 +166,41 @@ export default () => {
               Checked one off the bucket list!
             </p>
           </TimeLineAside>
-          <MiddleText>
+          <MiddleText
+          >
             <p>COLLABORATION</p>
             <p>RESOURCEFULNESS</p>
           </MiddleText>
           <AsidePlaceholder />
+        </TimeLineSection>
+
+        <TimeLineSection>
+          <AsidePlaceholder />
+          <MiddleText>
+            <p>DESIGN THINKING</p>
+          </MiddleText>
+          <TimeLineAside rightAside>
+            <img
+              className='top-img'
+              src='/static/my-experience/idf.png'
+              alt='David Stoker UX' />
+            <h3>
+              Interactive Design Foundation
+            </h3>
+            <p>
+              Completed online courses on design thinking through the
+              highly-regarded Interactive Design Foundation, a nonprofit
+              focused on providing top-notch curricular materials for global
+              design education.
+            </p>
+          </TimeLineAside>
+        </TimeLineSection>
+
+        <TimeLineSection bottom>
+          <p>READY FOR THE NEXT CHALLENGE</p>
+          <Link>
+            <Button>CONTACT ME</Button>
+          </Link>
         </TimeLineSection>
       </TimelineContainer>
     </div>

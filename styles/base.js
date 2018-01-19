@@ -43,7 +43,7 @@ export const CaseStudySection = styled.section`
     width: 124px;
     height: 34px;
     background-color: #fff;
-    border-radius: 24px 24px 0 0;
+    border-radius: 20px 20px 0 0;
     z-index: 2;
     color: ${yellow};
     font-size: 12px;
@@ -95,4 +95,21 @@ export const CaseStudySection = styled.section`
       }
     }
   `}
+`
+
+export const Button = styled.button`
+  padding: 15px 30px;
+  background-color: ${yellow};
+  color: #fff;
+  border: none;
+  outline: 0;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px ${darkGray};
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+
+  &:hover {
+    box-shadow: 4px 4px 12px ${darkGray};
+    transform: scale(1.02);
+  }
 `

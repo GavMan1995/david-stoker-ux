@@ -7,7 +7,7 @@ import { Hero, HeroAside } from '../styles/pages/home'
 export default () => {
   return (
     <div>
-      <Header home />
+      <Header home fixed />
 
       <Hero>
         <HeroAside>
