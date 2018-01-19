@@ -37,6 +37,14 @@ export const TimelineContainer = styled.div`
       right: calc(50% - 220px);
       bottom: 20px;
     }
+
+    @media (max-width: 880px) {
+      margin-bottom: 10px;
+      
+      > small {
+        display: none;
+      }
+    }
   }
 `
 export const TimeLineSection = styled.section`
@@ -57,19 +65,30 @@ export const TimeLineSection = styled.section`
       background-color: #fff;
     }
   `}
+
+  @media (max-width: 880px) {
+    ${props => props.bottom ? 'padding: 60px 20px 0;' : 'padding: 10px 20px;'}
+  }
 `
 export const TimeLineAside = styled.aside`
-  ${flexItem('200px')};
+  ${flexItem('250px')};
   margin: 0 80px;
   ${props => props.rightAside ? 'margin-left: 100px;' : 'margin-right: 100px;'}
   position: relative;
+  background-color: #fff;
   z-index: 3;
 
   > p {
+    width: 100%;
     padding-bottom: 20px;
-    &:last-child {
+
+    &:last-child, :nth-child(4) {
       padding-bottom: 0;
     }
+  }
+
+  > h3 {
+    width: 100%;
   }
 
   > .top-img {
@@ -95,9 +114,13 @@ export const TimeLineAside = styled.aside`
     text-align: center;
 
     > p {
+      padding-bottom: 10px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    > small {
       color: ${yellow};
-      padding-top: 20px;
-      font-size: 14px;
       cursor: pointer;
 
       > img {
@@ -117,7 +140,7 @@ export const TimeLineAside = styled.aside`
     ${props => props.rightAside ? 'border-radius: 10px 0 0 10px;' : 'border-radius: 0 10px 10px 0;'}
   }
 
-  :after {
+  &:after {
     content: '';
     position: absolute;
     top: calc(-10% + 2px);
@@ -127,9 +150,27 @@ export const TimeLineAside = styled.aside`
     background-color: #fff;
     ${props => props.rightAside ? 'border-radius: 8px 0 0 8px;' : 'border-radius: 0 8px 8px 0;'}
   }
+
+  @media (max-width: 880px) {
+    ${flexContainer('center')}
+    margin: 0 20px;
+
+    &:after, :before {
+      display: none;
+    }
+
+    > .bottom-note {
+      position: static;
+    }
+
+    > .side-img, .top-img {
+      position: static;
+      padding-bottom: 20px;
+    }
+  }
 `
 export const AsidePlaceholder = styled.aside`
-  ${flexItem('200px')}
+  ${flexItem('250px')}
   margin: 0 100px;
 `
 
@@ -149,5 +190,14 @@ export const MiddleText = styled.div`
     padding: 4px;
     background-color: #fff;
     color: ${yellow};
+  }
+
+  @media (max-width: 880px) {
+    position: static;
+    padding: 20px 0 30px 0;
+
+    > p {
+      margin: 10px 0;
+    }
   }
 `

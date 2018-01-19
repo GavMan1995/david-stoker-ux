@@ -35,7 +35,7 @@ h3, h3 * {
   line-height: 1.38;
 }
 
-p, p *, li, li * {
+p, p *, li, li *, i, i * {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.19;
@@ -43,8 +43,8 @@ p, p *, li, li * {
 
 small, small * {
   font-size: 14px;
-  line-height: 1.5;
-  font-weight: 600;
+  line-height: 1.22;
+  font-weight: 400;
 }
 
 label, label * {
@@ -55,22 +55,4 @@ label, label * {
 strong, b {
   font-weight: 900;
   color: #000;
-}
-
-@media (max-width: 800px) {
-  h1, h1 * {
-    font-size: 30px;
-  }
-  
-  h2, h2 * {
-    font-size: 22px;
-  }
-
-  h3, h3 * {
-    font-size: 18px;
-  }
-
-  p, p * {
-    font-size: 14px;
-  }
 }

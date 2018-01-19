@@ -21,14 +21,16 @@ export default () => {
         </div>
 
         <TimeLineSection>
+          <MiddleText>
+            <p>RESEARCHING</p>
+            <p>EMPATHY</p>
+            <p>IDEATING</p>
+            <p>PRESENTING</p>
+          </MiddleText>
           <TimeLineAside>
             <img
               className='top-img'
               src='/static/my-experience/degree.png'
-              alt='David Stoker UX' />
-            <img
-              className='side-img'
-              src='/static/my-experience/degree-side.png'
               alt='David Stoker UX' />
             <h3>
               A degree in advertising and work as an art director
@@ -39,28 +41,26 @@ export default () => {
               ways to connect with them. And powerful, meaningful connections
               often come from paring down all a company wants to say.
             </p>
-            <p>
+            <img
+              className='side-img'
+              src='/static/my-experience/degree-side.png'
+              alt='David Stoker UX' />
+            <i>
               My recent work at Pluralsight had me creating concepts for their
               social channels. I developed offbeat, fun ideas that spoke to the
               personalities and culture of their core users increasing
               engagement and response across all channels.
-            </p>
+            </i>
           </TimeLineAside>
-          <MiddleText>
-            <p>RESEARCHING</p>
-            <p>EMPATHY</p>
-            <p>IDEATING</p>
-            <p>PRESENTING</p>
-          </MiddleText>
           <AsidePlaceholder />
         </TimeLineSection>
 
         <TimeLineSection>
-          <AsidePlaceholder />
           <MiddleText className='middle-text'>
             <p>INTERVIEWING</p>
             <p>STORYTELLING</p>
           </MiddleText>
+          <AsidePlaceholder />
           <TimeLineAside rightAside>
             <img
               className='top-img'
@@ -78,14 +78,16 @@ export default () => {
         </TimeLineSection>
 
         <TimeLineSection>
+          <MiddleText>
+            <p>TEAMWORK</p>
+            <p>COMMUNICATION</p>
+            <p>PROBLEM SOLVING</p>
+            <p>PROJECT MANAGEMENT</p>
+          </MiddleText>
           <TimeLineAside>
             <img
               className='top-img'
               src='/static/my-experience/photographer.png'
-              alt='David Stoker UX' />
-            <img
-              className='side-img'
-              src='/static/my-experience/photographer-side.png'
               alt='David Stoker UX' />
             <h3>
               Commercial photographer
@@ -96,29 +98,27 @@ export default () => {
               abilities. Plus, there’s always, always something that goes wrong
               - so being quick on my feet and getting help from others is vital.
             </p>
-            <p>
+            <img
+              className='side-img'
+              src='/static/my-experience/photographer-side.png'
+              alt='David Stoker UX' />
+            <i>
               I worked with CompHealth to shoot new photography for a 2014
               rebrand. I directed and worked with a team of 15, with over 40
               talent for a week-long shoot. The rebrand was named best new
               brand by the Utah Marketers Association.
-            </p>
+            </i>
           </TimeLineAside>
-          <MiddleText>
-            <p>TEAMWORK</p>
-            <p>COMMUNICATION</p>
-            <p>PROBLEM SOLVING</p>
-            <p>PROJECT MANAGEMENT</p>
-          </MiddleText>
           <AsidePlaceholder />
         </TimeLineSection>
 
         <TimeLineSection>
-          <AsidePlaceholder />
           <MiddleText>
             <p>VISUAL DESIGN</p>
             <p>GRID SYSTEMS</p>
             <p>STYLE GUIDES</p>
           </MiddleText>
+          <AsidePlaceholder />
           <TimeLineAside rightAside>
             <img
               className='top-img'
@@ -137,22 +137,15 @@ export default () => {
         </TimeLineSection>
 
         <TimeLineSection>
+          <MiddleText>
+            <p>COLLABORATION</p>
+            <p>RESOURCEFULNESS</p>
+          </MiddleText>
           <TimeLineAside>
             <img
               className='top-img'
               src='/static/my-experience/music.png'
               alt='David Stoker UX' />
-            <div className='bottom-note'>
-              <small>
-                If you’ve got nothing to do for the next 4:07 minutes,
-                have a listen to one of the tracks.
-              </small>
-
-              <p>
-                <img src='/static/my-experience/music.svg' alt='' />
-                THE CLIFFS OF DOONEEN
-              </p>
-            </div>
             <h3>
               Composed, recorded and produced an album
             </h3>
@@ -165,20 +158,26 @@ export default () => {
             <p>
               Checked one off the bucket list!
             </p>
+
+            <div className='bottom-note'>
+              <p>
+                If you’ve got nothing to do for the next 4:07 minutes,
+                have a listen to one of the tracks.
+              </p>
+              <small>
+                <img src='/static/my-experience/music.svg' alt='' />
+                THE CLIFFS OF DOONEEN
+              </small>
+            </div>
           </TimeLineAside>
-          <MiddleText
-          >
-            <p>COLLABORATION</p>
-            <p>RESOURCEFULNESS</p>
-          </MiddleText>
           <AsidePlaceholder />
         </TimeLineSection>
 
         <TimeLineSection>
-          <AsidePlaceholder />
           <MiddleText>
             <p>DESIGN THINKING</p>
           </MiddleText>
+          <AsidePlaceholder />
           <TimeLineAside rightAside>
             <img
               className='top-img'
