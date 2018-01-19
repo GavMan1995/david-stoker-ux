@@ -13,7 +13,7 @@ import {
 export default () => {
   return (
     <div>
-      <Header fixed />
+      <Header fixed id='top' />
       <TimelineContainer>
         <div className='img-container'>
           <img src='/static/my-experience/profile.png' alt='David Stoker UX' />
@@ -197,9 +197,14 @@ export default () => {
 
         <TimeLineSection bottom>
           <p>READY FOR THE NEXT CHALLENGE</p>
-          <Link>
+          <Link href='/contact'>
             <Button>CONTACT ME</Button>
           </Link>
+
+          <a className='to-top' href='#top'>
+            <p>^</p>
+            <small>TOP</small>
+          </a>
         </TimeLineSection>
       </TimelineContainer>
     </div>

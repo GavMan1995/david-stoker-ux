@@ -9,6 +9,10 @@ export const TimelineContainer = styled.div`
   margin: 160px 0;
   background-color: #fff;
 
+  @media (max-width: 880px) {
+    margin-bottom: 60px
+  }
+
   &:after {
     height: 100%;
     position: absolute;
@@ -47,6 +51,7 @@ export const TimelineContainer = styled.div`
     }
   }
 `
+
 export const TimeLineSection = styled.section`
   ${flexContainer()}
   ${props => props.bottom ? 'padding: 0 calc(50% - 612px);' : 'padding: 80px calc(50% - 612px);'}
@@ -63,6 +68,27 @@ export const TimeLineSection = styled.section`
       padding: 4px;
       text-align: center;
       background-color: #fff;
+      font-weight: 400;
+    }
+
+    > .to-top {
+      ${flexContainer('center', 'center', 'center')};
+      position: absolute;
+      bottom: -40px;
+      right: 40px;
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      background-color: ${gray};
+      border-radius: 50%;
+      box-shadow: 2px 2px 4px ${darkGray};
+      cursor: pointer;
+
+      > p, small {
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+      }
     }
   `}
 
@@ -70,6 +96,7 @@ export const TimeLineSection = styled.section`
     ${props => props.bottom ? 'padding: 60px 20px 0;' : 'padding: 10px 20px;'}
   }
 `
+
 export const TimeLineAside = styled.aside`
   ${flexItem('250px')};
   margin: 0 80px;
@@ -122,6 +149,7 @@ export const TimeLineAside = styled.aside`
     > small {
       color: ${yellow};
       cursor: pointer;
+      font-size: 14px;
 
       > img {
         margin-right: 10px;
@@ -169,6 +197,7 @@ export const TimeLineAside = styled.aside`
     }
   }
 `
+
 export const AsidePlaceholder = styled.aside`
   ${flexItem('250px')}
   margin: 0 100px;
