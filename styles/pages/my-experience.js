@@ -47,7 +47,7 @@ export const TimeLineSection = styled.section`
 export const TimeLineAside = styled.aside`
   ${flexItem('200px')};
   margin: 0 80px;
-  ${props => props.rightAside ? 'margin-left: 160px;' : 'margin-right: 160px;'}
+  ${props => props.rightAside ? 'margin-left: 100px;' : 'margin-right: 100px;'}
   position: relative;
   z-index: 3;
 
@@ -74,7 +74,7 @@ export const TimeLineAside = styled.aside`
     content: '';
     position: absolute;
     top: -10%;
-    ${props => props.rightAside ? 'left: -40px;' : 'right: -30px;'}
+    ${props => props.rightAside ? 'left: -30px;' : 'right: -20px;'}
     width: 20px;
     height: 120%;
     background-color: ${yellow};
@@ -85,7 +85,7 @@ export const TimeLineAside = styled.aside`
     content: '';
     position: absolute;
     top: calc(-10% + 2px);
-    ${props => props.rightAside ? 'left: -38px;' : 'right: -28px;'}
+    ${props => props.rightAside ? 'left: -28px;' : 'right: -18px;'}
     width: 20px;
     height: calc(120% - 4px);
     background-color: #fff;
@@ -94,11 +94,11 @@ export const TimeLineAside = styled.aside`
 `
 export const AsidePlaceholder = styled.aside`
   ${flexItem('200px')}
-  margin: 0 160px;
+  margin: 0 100px;
 `
 
 export const MiddleText = styled.div`
-  ${flexContainer('flex-start', 'center', 'space-around')}
+  ${flexContainer('space-around', 'center', 'center', 'wrap', 'column')}
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +109,7 @@ export const MiddleText = styled.div`
   text-align: center;
 
   > p {
-    width: 100%;
+    width: 160px;
     padding: 4px;
     background-color: #fff;
     color: ${yellow};
