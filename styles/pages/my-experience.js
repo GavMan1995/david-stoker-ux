@@ -73,6 +73,7 @@ export const TimeLineSection = styled.section`
 
     > .to-top {
       ${flexContainer('center', 'center', 'center')};
+      display: none;
       position: absolute;
       bottom: -40px;
       right: 40px;
@@ -83,6 +84,10 @@ export const TimeLineSection = styled.section`
       border-radius: 50%;
       box-shadow: 2px 2px 4px ${darkGray};
       cursor: pointer;
+
+      @media (max-width: 880px) {
+        display: flex;
+      }
 
       > p, small {
         width: 100%;
@@ -189,6 +194,7 @@ export const TimeLineAside = styled.aside`
 
     > .bottom-note {
       position: static;
+      margin-top: 20px;
     }
 
     > .side-img, .top-img {
