@@ -187,7 +187,7 @@ export default class MyExperience extends Component {
                 </p>
                 <small onClick={this.playSong.bind(this)}>
                   <img src='/static/my-experience/music.svg' alt='' />
-                  THE CLIFFS OF DOONEEN
+                  {this.state.playSong ? 'PLAYING' : ''} THE CLIFFS OF DOONEEN
                 </small>
               </div>
             </TimeLineAside>
