@@ -21,15 +21,7 @@ export default class MyExperience extends Component {
   }
 
   render () {
-    let audio = ''
-    if (this.state.playSong) {
-      audio = (
-        <audio autoPlay>
-          <source src='/static/cliffs-of-dooneen.m4a' />
-        </audio>
-      )
-    }
-
+    console.log(this.state.playSong)
     return (
       <div>
         <Header fixed id='top' />
@@ -179,14 +171,16 @@ export default class MyExperience extends Component {
               </p>
 
               <div className='bottom-note'>
-                {audio}
+                <audio id='music'>
+                  <source src='/static/cliffs-of-dooneen.m4a' />
+                </audio>
                 <p>
                   If you’ve got nothing to do for the next 4:07 minutes,
                   have a listen to one of the tracks.
                 </p>
                 <small onClick={this.playSong.bind(this)}>
                   <img src='/static/my-experience/music.svg' alt='' />
-                  {this.state.playSong ? 'PLAYING' : ''} THE CLIFFS OF DOONEEN
+                  {this.state.playSong ? 'PAUSE' : ''} THE CLIFFS OF DOONEEN
                 </small>
               </div>
             </TimeLineAside>
@@ -232,6 +226,9 @@ export default class MyExperience extends Component {
   }
 
   playSong () {
-    this.setState({playSong: true})
+    const audio = document.getElementById('music')
+    !this.state.playSong ? audio.play() : audio.pause()
+
+    this.setState({playSong: !this.state.playSong})
   }
 }
