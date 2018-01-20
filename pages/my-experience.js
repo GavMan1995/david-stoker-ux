@@ -161,7 +161,6 @@ export default class MyExperience extends Component {
               <p>RESOURCEFULNESS</p>
             </MiddleText>
             <TimeLineAside>
-              {audio}
               <img
                 className='top-img'
                 src='/static/my-experience/music.png'
@@ -180,7 +179,7 @@ export default class MyExperience extends Component {
               </p>
 
               <div className='bottom-note'>
-
+                {audio}
                 <p>
                   If you’ve got nothing to do for the next 4:07 minutes,
                   have a listen to one of the tracks.
