@@ -2,12 +2,13 @@ import Link from 'next/link'
 
 import Header from '../../components/Header'
 import { CaseStudySection } from '../../styles/base'
+import { HeaderSpacer } from '../../styles/components/Header'
 
 export default () => {
   return (
     <div>
       <Header />
-
+      <HeaderSpacer />
       <Link prefetch href='/case-studies/vmsa'>
         <CaseStudySection vmsa>
           <div className='case-study-tab'><small>CASE STUDY 1</small></div>

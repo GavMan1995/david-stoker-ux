@@ -225,6 +225,7 @@ export const MiddleText = styled.div`
     padding: 4px;
     background-color: #fff;
     color: ${yellow};
+    font-weight: 400;
   }
 
   @media (max-width: 880px) {
@@ -233,6 +234,7 @@ export const MiddleText = styled.div`
 
     > p {
       margin: 10px 0;
+      font-weight: 600;
     }
   }
 `
