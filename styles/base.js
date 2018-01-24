@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components'
 
-import { flexContainer, flexItem } from './tools/mixins'
-import { gray, gold, yellow, darkGray } from './tools/colors'
+import { flexContainer } from './tools/mixins'
+import { yellow, darkGray } from './tools/colors'
 
 export const CaseStudySection = styled.section`
   ${flexContainer('center', 'center', 'center')}
   position: relative;
   width: 100%;
   height: 355px;
-  padding-top: 40px;
+  padding: 40px 20px;
   color: #fff;
   cursor: pointer;
 

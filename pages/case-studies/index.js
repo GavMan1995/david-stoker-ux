@@ -1,8 +1,9 @@
 import Link from 'next/link'
 
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import { CaseStudySection } from '../../styles/base'
-import { HeaderSpacer } from '../../styles/components/Header'
+import { HeaderSpacer } from '../../styles/components/header'
 
 export default () => {
   return (
@@ -35,6 +36,8 @@ export default () => {
           <p>Can a new mobile app solve an old paper problem</p>
         </CaseStudySection>
       </Link>
+
+      <Footer />
     </div>
   )
 }

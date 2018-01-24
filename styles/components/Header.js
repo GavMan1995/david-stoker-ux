@@ -46,7 +46,7 @@ export const MobileMenu = styled.div`
       background-color: ${gray};
       transform: translateY(-100%); 
       opacity: 0;
-      transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+      transition: opacity 0.4s ease, transform 0.4s ease;
       ${props => props.open ? 'opacity: 1;' : ''}
       ${props => props.open ? 'transform: translateY(0);' : ''}
 

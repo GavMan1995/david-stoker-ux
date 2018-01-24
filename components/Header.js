@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import Link from 'next/link'
 
-import { Header, Menu, MobileMenu, Hamburger } from '../styles/components/Header'
+import { Header, Menu, MobileMenu, Hamburger } from '../styles/components/header'
 import { boxShadow, yellow } from '../styles/tools/colors'
 
 export default class extends Component {
@@ -14,13 +14,15 @@ export default class extends Component {
   }
 
   render () {
-    const { fixed, home } = this.props
-    const location = global.location
+    const { fixed, home, shadow } = this.props
 
     let style
     let caseStudiesStyle
     let contactStyle
     let myExperienceStyle
+    let location
+
+    global ? location = global.location : location = window.location
 
     let mobile = (
       <MobileMenu />
@@ -30,6 +32,10 @@ export default class extends Component {
       style = {position: 'fixed'}
     } else if (fixed) {
       style = {position: 'fixed', boxShadow: `inset 0 -2px 8px -2px ${boxShadow}`}
+    } else if (this.state.menuOpen) {
+      style = {position: 'fixed'}
+    } else if (shadow) {
+      style = {boxShadow: `inset 0 -2px 8px -2px ${boxShadow}`}
     }
 
     if (location && location.pathname === '/contact') {
@@ -95,13 +101,5 @@ export default class extends Component {
 
   toggleMenu () {
     this.setState({ menuOpen: !this.state.menuOpen })
-
-    if (this.state.menuOpen === false) {
-      document.body.style.height = '100vh'
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.height = '100%'
-      document.body.style.overflow = 'initial'
-    }
   }
 }
