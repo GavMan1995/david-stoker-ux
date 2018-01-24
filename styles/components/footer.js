@@ -30,5 +30,9 @@ export const Footer = styled.footer`
     > a {
       margin: 0 20px;
     }
+
+    > .contact {
+      padding-left: 40px;
+    }
   }
 `
