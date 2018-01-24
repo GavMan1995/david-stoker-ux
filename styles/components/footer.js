@@ -24,14 +24,11 @@ export const Footer = styled.footer`
 
   @media (max-width: 880px) {
     justify-content: center;
+    padding: 40px;
     padding-bottom: 100px;
     
     > a {
       margin: 0 20px;
     }
-
-    &.contact {
-    padding-left: 100px;
-  }
   }
 `
