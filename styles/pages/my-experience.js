@@ -234,7 +234,7 @@ export const MiddleText = styled.div`
 
     > p {
       margin: 10px 0;
-      font-weight: 600;
+      font-weight: 400;
     }
   }
 `
