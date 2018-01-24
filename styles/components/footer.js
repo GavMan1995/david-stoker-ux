@@ -31,7 +31,7 @@ export const Footer = styled.footer`
       margin: 0 20px;
     }
 
-    > .contact {
+    &.contact {
       padding-left: 40px;
     }
   }
