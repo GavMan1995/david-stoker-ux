@@ -51,14 +51,12 @@ export const MobileMenu = styled.div`
       ${props => props.open ? 'transform: translateY(0);' : ''}
 
       h3 {
-        color: ${link};
-        font-weight: 100;
-      }
-
-      > a {
         width: 100%;
         margin: 20px 0;
+        color: ${link};
+        font-weight: 100;
         text-align: center;
+        cursor: pointer;
       }
 
       > h2 {

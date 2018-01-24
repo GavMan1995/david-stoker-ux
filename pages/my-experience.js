@@ -21,7 +21,6 @@ export default class MyExperience extends Component {
   }
 
   render () {
-    console.log(this.state.playSong)
     return (
       <div>
         <Header fixed id='top' />
@@ -216,7 +215,7 @@ export default class MyExperience extends Component {
             </Link>
 
             <a className='to-top' href='#top'>
-              <p>^</p>
+              <p>&#x0245;</p>
               <small>TOP</small>
             </a>
           </TimeLineSection>

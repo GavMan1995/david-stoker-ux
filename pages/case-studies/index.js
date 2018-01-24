@@ -10,7 +10,7 @@ export default () => {
       <Header />
       <HeaderSpacer />
       <Link prefetch href='/case-studies/vmsa'>
-        <CaseStudySection vmsa>
+        <CaseStudySection firstSection vmsa>
           <div className='case-study-tab'><small>CASE STUDY 1</small></div>
           <span />
           <h2>The Violin Making School of America</h2>

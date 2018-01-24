@@ -31,7 +31,8 @@ export const CaseStudySection = styled.section`
     width: 100%;
     height: 40px;
     background-color: #fff;
-    box-shadow: 0 -8px 16px -8px ${darkGray};
+    box-shadow: 0 -8px 16px -8px #000;
+    ${props => props.firstSection ? `box-shadow: 0px -8px 16px -8px ${darkGray};` : 'box-shadow: 0px -8px 16px -8px #000;'}
     z-index: 1;
   }
 
@@ -48,7 +49,7 @@ export const CaseStudySection = styled.section`
     color: ${yellow};
     font-size: 12px;
     font-family: "museo-sans", sans-serif;
-    box-shadow: 4px -4px 8px -4px ${darkGray};
+    ${props => props.firstSection ? `box-shadow: 4px -4px 8px -4px ${darkGray};` : 'box-shadow: 4px -4px 8px -4px #000;'}
   }
 
   ${props => props.vmsa && css`

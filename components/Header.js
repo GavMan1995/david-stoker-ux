@@ -2,6 +2,7 @@ import { Component } from 'react'
 import Link from 'next/link'
 
 import { Header, Menu, MobileMenu, Hamburger } from '../styles/components/Header'
+import { boxShadow, yellow } from '../styles/tools/colors'
 
 export default class extends Component {
   constructor () {
@@ -14,27 +15,52 @@ export default class extends Component {
 
   render () {
     const { fixed, home } = this.props
+    const location = global.location
+
+    let style
+    let caseStudiesStyle
+    let contactStyle
+    let myExperienceStyle
+
     let mobile = (
       <MobileMenu />
     )
+
+    if (fixed && home) {
+      style = {position: 'fixed'}
+    } else if (fixed) {
+      style = {position: 'fixed', boxShadow: `inset 0 -2px 8px -2px ${boxShadow}`}
+    }
+
+    if (location && location.pathname === '/contact') {
+      contactStyle = {color: yellow}
+    } else if (location && location.pathname === '/case-studies') {
+      caseStudiesStyle = {color: yellow}
+    } else if (location && location.pathname === '/my-experience') {
+      myExperienceStyle = {color: yellow}
+    }
 
     if (this.state.menuOpen) {
       mobile = (
         <MobileMenu open>
           <h2 onClick={this.toggleMenu.bind(this)}>&#x2715;</h2>
-          <a href='/case-studies'>
-            <h3>CASE STUDIES</h3>
-          </a><a href='/my-experience'>
-            <h3>MY EXPERIENCE</h3>
-          </a><a href='/contact'>
-            <h3>CONTACT</h3>
-          </a>
+          <Link href='/case-studies'>
+            <h3 style={caseStudiesStyle}>CASE STUDIES</h3>
+          </Link>
+
+          <Link prefetch href='/my-experience'>
+            <h3 style={myExperienceStyle}>MY EXPERIENCE</h3>
+          </Link>
+
+          <Link prefetch href='/contact'>
+            <h3 style={contactStyle}>CONTACT</h3>
+          </Link>
         </MobileMenu>
       )
     }
 
     return (
-      <Header style={fixed ? {position: 'fixed'} : {}}>
+      <Header style={style}>
         <Link href='/'>
           <img
             src='/static/ux-logo.svg'
@@ -43,16 +69,16 @@ export default class extends Component {
         </Link>
         <Menu>
           <Link href='/case-studies'>
-          CASE STUDIES
-        </Link>
+            <a style={caseStudiesStyle}>CASE STUDIES</a>
+          </Link>
 
           <Link prefetch href='/my-experience'>
-          MY EXPERIENCE
-        </Link>
+            <a style={myExperienceStyle}>MY EXPERIENCE</a>
+          </Link>
 
           <Link prefetch href='/contact'>
-          CONTACT
-        </Link>
+            <a style={contactStyle}>CONTACT</a>
+          </Link>
         </Menu>
 
         <Hamburger onClick={this.toggleMenu.bind(this)}>
