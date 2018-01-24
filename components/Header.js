@@ -15,12 +15,18 @@ export default class extends Component {
 
   render () {
     const { fixed, home, shadow } = this.props
-    const location = global.location
 
     let style
     let caseStudiesStyle
     let contactStyle
     let myExperienceStyle
+    let location
+
+    if (window.location) {
+      location = window.location
+    } else {
+      location = global.location
+    }
 
     let mobile = (
       <MobileMenu />
