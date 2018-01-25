@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
 
 import { Header, Menu, MobileMenu, Hamburger } from '../styles/components/header'
 import { boxShadow, yellow } from '../styles/tools/colors'
@@ -15,19 +16,12 @@ export default class extends Component {
 
   render () {
     const { fixed, home, shadow } = this.props
+    const path = Router.pathname
 
     let style
     let caseStudiesStyle
     let contactStyle
     let myExperienceStyle
-    let location
-
-    if (window.location) {
-      location = window.location
-    } else {
-      location = global.location
-    }
-
     let mobile = (
       <MobileMenu />
     )
@@ -42,11 +36,11 @@ export default class extends Component {
       style = {boxShadow: `inset 0 -2px 8px -2px ${boxShadow}`}
     }
 
-    if (location && location.pathname === '/contact') {
+    if (path === '/contact') {
       contactStyle = {color: yellow}
-    } else if (location && location.pathname === '/case-studies') {
+    } else if (path === '/case-studies') {
       caseStudiesStyle = {color: yellow}
-    } else if (location && location.pathname === '/my-experience') {
+    } else if (path === '/my-experience') {
       myExperienceStyle = {color: yellow}
     }
 
