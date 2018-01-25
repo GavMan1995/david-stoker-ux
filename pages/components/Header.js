@@ -2,8 +2,8 @@ import { Component } from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
 
-import { Header, Menu, MobileMenu, Hamburger } from '../styles/components/header'
-import { boxShadow, yellow } from '../styles/tools/colors'
+import { Header, Menu, MobileMenu, Hamburger } from '../../styles/components/header'
+import { boxShadow, yellow } from '../../styles/tools/colors'
 
 export default class extends Component {
   constructor () {
