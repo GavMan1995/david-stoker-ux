@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { CaseStudySection } from '../../styles/base'
 import { HeaderSpacer } from '../../styles/components/header'
 
