@@ -1,11 +1,11 @@
 import { Component } from 'react'
 import Link from 'next/link'
-import Router from 'next/router'
+import { withRouter } from 'next/router'
 
-import { Header, Menu, MobileMenu, Hamburger } from '../../styles/components/header'
+import { HeaderStyle, Menu, MobileMenu, Hamburger } from '../../styles/components/header'
 import { boxShadow, yellow } from '../../styles/tools/colors'
 
-export default class extends Component {
+class Header extends Component {
   constructor () {
     super()
 
@@ -15,8 +15,8 @@ export default class extends Component {
   }
 
   render () {
-    const { fixed, home, shadow } = this.props
-    const path = Router.pathname
+    const { fixed, home, shadow, router } = this.props
+    const path = router.pathname
 
     let style
     let caseStudiesStyle
@@ -64,7 +64,7 @@ export default class extends Component {
     }
 
     return (
-      <Header style={style}>
+      <HeaderStyle style={style}>
         <Link href='/'>
           <img
             src='/static/ux-logo.svg'
@@ -93,7 +93,7 @@ export default class extends Component {
 
         {mobile}
 
-      </Header>
+      </HeaderStyle>
     )
   }
 
@@ -101,3 +101,5 @@ export default class extends Component {
     this.setState({ menuOpen: !this.state.menuOpen })
   }
 }
+
+export default withRouter(Header)
