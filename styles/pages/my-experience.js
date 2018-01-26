@@ -31,7 +31,8 @@ export const TimelineContainer = styled.div`
 
     > img {
       width: 175px;
-      height: auto;
+      height: 175px;
+      background-color: ${gray};
       border: 1px solid #A0A1A0;
       border-radius: 50%;
     }
@@ -44,7 +45,7 @@ export const TimelineContainer = styled.div`
 
     @media (max-width: 880px) {
       margin-bottom: 10px;
-      
+
       > small {
         display: none;
       }
@@ -56,7 +57,7 @@ export const TimeLineSection = styled.section`
   ${flexContainer()}
   ${props => props.bottom ? 'padding: 0 calc(50% - 612px);' : 'padding: 80px calc(50% - 612px);'}
   position: relative;
-  
+
   ${props => props.bottom && css`
     ${flexContainer('center')};
     padding-top: 80px;
@@ -126,13 +127,21 @@ export const TimeLineAside = styled.aside`
   > .top-img {
     position: absolute;
     top: -160px;
-    left: calc(50% - 62.5px)
+    left: calc(50% - 62.5px);
+    width: 125px;
+    height: 125px;
+    background-color: ${gray};
+    border-radius: 50%;
   }
 
   > .side-img {
     position: absolute;
     bottom: 20px;
     left: -120px;
+    width: 83px;
+    height: 83px;
+    background-color: ${gray};
+    border-radius: 50%;
   }
 
   > .bottom-note {
