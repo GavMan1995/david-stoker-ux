@@ -208,7 +208,7 @@ export const TimeLineAside = styled.aside`
 
     > .side-img, .top-img {
       position: static;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
   }
 `
