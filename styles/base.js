@@ -115,20 +115,65 @@ export const Button = styled.button`
   }
 `
 
-export const section = styled.div`
+export const Section = styled.div`
   ${flexContainer()};
   width: 100%;
-  padding: 60px calc(50% - 612px);
+  padding: 60px calc(50% - 400px);
+  padding-bottom: 0;
+
+  .sub-head {
+    width: 100%;
+    color: ${yellow};
+    padding-bottom: 40px;
+
+    &.no-padding {
+      padding: 0;
+    }
+  }
+
+  .border-header {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    color: ${yellow};
+    font-weight: 300;
+  }
+
+  > h1 {
+    width: 100%;
+  }
+
+  > p {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    font-size: 20px;
+    line-height: 1.93;
+  }
 `
 
-export const ImageContainer = styled.div`
-  ${flexContainer()}
+export const ImageSection = styled.div`
+  ${flexContainer('center')}
   width: 100%;
-  padding: 20px 80px;
-  background-color: ${gray};
+  padding: 60px calc(50% - 700px);
+  ${props => props.white ? 'background-color: #fff;' : `background-color: ${gray};`}
+
+  .sub-text {
+    width: 100%;
+    padding: 10px 80px;
+    text-align: center;
+    color: ${darkGray};
+  }
+
+  .sub-head {
+    width: 100%;
+    color: ${yellow};
+    padding-bottom: 40px;
+  }
 
   > div {
-    ${flexItem('400px')};
+    ${flexItem('600px', '1', '1', '800px')};
+    ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
+    padding: 20px;
     
     > img {
       width: 100%;

@@ -15,10 +15,11 @@ export const flexContainer = (
   )
 }
 
-export const flexItem = (basis, grow, shrink) => {
+export const flexItem = (basis, grow, shrink, maxWidth) => {
   return (
     `flex-basis: ${basis || '100px'};
     flex-grow: ${grow || '1'};
-    flex-shrink: ${shrink || '1'};`
+    flex-shrink: ${shrink || '1'};
+    max-width: ${maxWidth || '100%'};`
   )
 }
