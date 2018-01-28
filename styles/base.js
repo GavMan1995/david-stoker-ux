@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
-import { flexContainer } from './tools/mixins'
-import { yellow, darkGray } from './tools/colors'
+import { flexContainer, flexItem } from './tools/mixins'
+import { yellow, darkGray, gray } from './tools/colors'
 
 export const CaseStudySection = styled.section`
   ${flexContainer('center', 'center', 'center')}
@@ -112,5 +112,27 @@ export const Button = styled.button`
   &:hover {
     box-shadow: 4px 4px 12px ${darkGray};
     transform: scale(1.02);
+  }
+`
+
+export const section = styled.div`
+  ${flexContainer()};
+  width: 100%;
+  padding: 60px calc(50% - 612px);
+`
+
+export const ImageContainer = styled.div`
+  ${flexContainer()}
+  width: 100%;
+  padding: 20px 80px;
+  background-color: ${gray};
+
+  > div {
+    ${flexItem('400px')};
+    
+    > img {
+      width: 100%;
+      height: auto;
+    }
   }
 `
