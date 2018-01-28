@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import { CaseStudySection } from '../styles/base'
 import { Hero, HeroAside } from '../styles/pages/home'
 
@@ -19,7 +19,7 @@ export default () => {
 
         <HeroAside>
           <h2>
-            I’m an experienced, multi-disciplinary designer driven by a desire
+            I’m an EXPERIENCED, multi-disciplinary designer driven by a desire
             to create user-friendly products that make a difference
             in people’s lives.
           </h2>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { flexContainer } from '../tools/mixins'
 import { gray, link, yellow } from '../tools/colors'
 
-export const Header = styled.header`
+export const HeaderStyle = styled.header`
       ${flexContainer('space-between', 'center')}
       width: 100%;
       padding: 30px 117px;
@@ -44,9 +44,9 @@ export const MobileMenu = styled.div`
       padding: 40px 20px;
       z-index: 100;
       background-color: ${gray};
-      transform: translateY(-100%); 
+      transform: translateY(-100%);
       opacity: 0;
-      transition: opacity 0.4s ease, transform 0.4s ease;
+      transition: opacity 0.4s ease, transform 0.2s ease;
       ${props => props.open ? 'opacity: 1;' : ''}
       ${props => props.open ? 'transform: translateY(0);' : ''}
 
@@ -77,7 +77,7 @@ export const Hamburger = styled.div`
       @media (min-width: 880px) {
         display: none;
       }
-      
+
       > span {
         display: block;
         width: 100%;

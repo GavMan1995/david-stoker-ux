@@ -1,4 +1,4 @@
-import { Footer } from '../styles/components/footer'
+import { Footer } from '../../styles/components/footer'
 
 export default ({ contact }) => {
   return (
