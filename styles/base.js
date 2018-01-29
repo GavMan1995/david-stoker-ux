@@ -121,6 +121,19 @@ export const Section = styled.div`
   padding: 60px calc(50% - 400px);
   padding-bottom: 0;
 
+  @media (max-width: 880px) {
+    padding: 40px;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #000;
+  }
+
+  .small-header {
+    padding-top: 40px;
+    font-weight: 800;
+  }
+
   .sub-head {
     width: 100%;
     color: ${yellow};
@@ -133,6 +146,7 @@ export const Section = styled.div`
 
   .border-header {
     width: 100%;
+    margin-bottom: 80px;
     padding-bottom: 10px;
     border-bottom: 1px solid #000;
     color: ${yellow};
@@ -149,12 +163,27 @@ export const Section = styled.div`
     font-size: 20px;
     line-height: 1.93;
   }
+
+  ${props => props.center ? 'justify-content: center; align-content: center;' : ''}
 `
 
 export const ImageSection = styled.div`
-  ${flexContainer('center')}
+  ${flexContainer('center', 'stretch', 'stretch')}
   width: 100%;
   padding: 60px calc(50% - 700px);
+
+  ${props => props.noPaddingBottomDesktop ? `
+    @media (max-width: 600px) {
+      padding-bottom: 40px;
+    }
+
+    padding-bottom: 0;
+  ` : `
+    @media (max-width: 1440px) {
+      padding: 40px 20px;
+    }
+  `}
+
   ${props => props.white ? 'background-color: #fff;' : `background-color: ${gray};`}
 
   .sub-text {
@@ -162,6 +191,18 @@ export const ImageSection = styled.div`
     padding: 10px 80px;
     text-align: center;
     color: ${darkGray};
+
+    &.no-padding {
+      padding: 0;
+    }
+
+    &.left {
+      text-align: left;
+    }
+
+    &.bottom {
+      align-self: bottom;
+    }
   }
 
   .sub-head {
@@ -170,7 +211,22 @@ export const ImageSection = styled.div`
     padding-bottom: 40px;
   }
 
+  .img-desktop {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .img-mobile {
+    display: none;
+    
+    @media (max-width: 600px) {
+      display: initial;
+    }
+  }
+
   > div {
+    ${flexContainer('flex-start', 'flex-start', 'space-between')}
     ${flexItem('600px', '1', '1', '800px')};
     ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
     padding: 20px;
@@ -178,6 +234,29 @@ export const ImageSection = styled.div`
     > img {
       width: 100%;
       height: auto;
+    }
+  }
+`
+
+export const List = styled.ul`
+  padding-bottom: 40px;
+
+  > li {
+    position: relative;
+    padding: 15px 20px;
+    padding-bottom: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 27px;
+      width: 10px;
+      height: 10px;
+      background: url('/static/list-style.svg');
+      content: '';
     }
   }
 `

@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-import { ImageSection, Section, CaseStudySection } from '../../styles/base'
+import { ImageSection, Section, CaseStudySection, List, Button } from '../../styles/base'
 
 export default () => {
   return (
@@ -99,6 +99,67 @@ export default () => {
             Something as beautiful and rich as violin making should have a
             website that reflects the same aesthetic.
           </h1>
+        </Section>
+
+        <ImageSection noPaddingBottomDesktop>
+          <div style={{flexBasis: '100px', maxWidth: '300px', paddingBottom: '0', alignItems: 'flex-end'}}>
+            <img className='img-desktop' src='/static/vmsa/wireframe-long.png' alt='David Stoker UX' />
+            <img className='img-mobile' src='/static/vmsa/wireframe-long-mobile.png' alt='David Stoker UX' />
+          </div>
+          <div style={{flexBasis: '200px'}}>
+            <img className='img-desktop' src='/static/vmsa/wireframe-desktop.png' alt='David Stoker UX' />
+            <img className='img-mobile' src='/static/vmsa/wireframe-mobile.png' alt='David Stoker UX' />
+            <p className='sub-text no-padding left bottom'>
+              Wireframes:<br />
+              New Home page designed with scrolling to show off quick history
+              and credibility of school.<br />
+              New ‘Graduate Success’ page aimed at telling stories that
+              applicants can be inspired by and personalize.<br />
+            </p>
+          </div>
+        </ImageSection>
+
+        <Section>
+          <h3 className='sub-head'>
+            DESIGN PROCESS
+          </h3>
+          <h1>So what’s a world-famous luthier school to do?</h1>
+          <p className='border-bottom'>
+            To start, I interviewed staff and students, and then some
+            competitor analysis. After that I defined content and design
+            improvements. Then some wireframes, hi-fi prototype testing, a photo
+            shoot, a video shoot, and did a lot of writing and re-writing content
+            for improved flow, better marketing focus and simplification.
+          </p>
+
+          <h2 className='small-header'>Here's what I proposed</h2>
+          <List className='border-bottom'>
+            <li>
+              Don't shy away from being bold, the site is meant to excite and
+              attract new student
+            </li>
+            <li>
+              Use homepage to give strong overview of school
+            </li>
+            <li>
+              Edit content to be more easily digested and more succinct
+            </li>
+            <li>
+              Improve site design and imagery to be more clean and sophisticated
+            </li>
+            <li>
+              Highlight a few graduate successes more clearly and prominently
+            </li>
+            <li>
+              Video piece with short student stories to help build emotional
+              connection and appeal to applicant's hope for industry success
+            </li>
+            <li>Simplify navigation</li>
+          </List>
+        </Section>
+
+        <Section center>
+          <Button>VIEW THE PROTOTYPE</Button>
         </Section>
       </div>
       <Footer />
