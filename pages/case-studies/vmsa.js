@@ -159,8 +159,17 @@ export default () => {
         </Section>
 
         <Section center>
-          <Button>VIEW THE PROTOTYPE</Button>
+          <Button style={{marginBottom: '80px'}}>VIEW THE PROTOTYPE</Button>
         </Section>
+
+        <ImageSection large noPaddingBottom>
+          <div className='img-desktop no-padding-bottom'>
+            <img src='/static/vmsa/home-desktop.png' alt='David Stoker UX' />
+          </div>
+          <div className='img-mobile no-padding-bottom'>
+            <img src='/static/vmsa/home-mobile.png' alt='David Stoker UX' />
+          </div>
+        </ImageSection>
       </div>
       <Footer />
     </div>

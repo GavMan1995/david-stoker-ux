@@ -99,7 +99,7 @@ export const CaseStudySection = styled.section`
 `
 
 export const Button = styled.button`
-  padding: 15px 30px;
+  padding: 20px 30px;
   background-color: ${yellow};
   color: #fff;
   border: none;
@@ -123,6 +123,7 @@ export const Section = styled.div`
 
   @media (max-width: 880px) {
     padding: 40px;
+    padding-bottom: 0;
   }
 
   .border-bottom {
@@ -185,6 +186,7 @@ export const ImageSection = styled.div`
   `}
 
   ${props => props.white ? 'background-color: #fff;' : `background-color: ${gray};`}
+  ${props => props.noPaddingBottom ? 'padding-bottom: 0 !important;' : ''}
 
   .sub-text {
     width: 100%;
@@ -202,6 +204,10 @@ export const ImageSection = styled.div`
 
     &.bottom {
       align-self: bottom;
+    }
+
+    @media (max-width: 880px) {
+      padding: 10px 0;
     }
   }
 
@@ -229,7 +235,12 @@ export const ImageSection = styled.div`
     ${flexContainer('flex-start', 'flex-start', 'space-between')}
     ${flexItem('600px', '1', '1', '800px')};
     ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
+    ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
     padding: 20px;
+    
+    &.no-padding-bottom {
+      padding-bottom: 0;
+    }
     
     > img {
       width: 100%;
