@@ -102,7 +102,7 @@ export default () => {
         </Section>
 
         <ImageSection noPaddingBottomDesktop>
-          <div style={{flexBasis: '100px', maxWidth: '300px', paddingBottom: '0', alignItems: 'flex-end'}}>
+          <div style={{flexBasis: '120px', maxWidth: '300px', paddingBottom: '0'}}>
             <img className='img-desktop' src='/static/vmsa/wireframe-long.png' alt='David Stoker UX' />
             <img className='img-mobile' src='/static/vmsa/wireframe-long-mobile.png' alt='David Stoker UX' />
           </div>
@@ -159,7 +159,9 @@ export default () => {
         </Section>
 
         <Section center>
-          <Button style={{marginBottom: '80px'}}>VIEW THE PROTOTYPE</Button>
+          <a href='https://invis.io/F3DJK0HQJ#/253798375_Home' target='_blank'>
+            <Button style={{marginBottom: '80px'}}>VIEW  THE PROTOTYPE</Button>
+          </a>
         </Section>
 
         <ImageSection large noPaddingBottom>
@@ -170,8 +172,54 @@ export default () => {
             <img src='/static/vmsa/home-mobile.png' alt='David Stoker UX' />
           </div>
         </ImageSection>
+
+        <ImageSection white smallPaddingMobile>
+          <iframe
+            src='https://player.vimeo.com/video/196616055?color=ffffff&title=0&byline=0&portrait=0'
+            width='1000'
+            height='563' />
+
+          <p className='sub-text'>
+            Video piece I shot, directed and edited for the new site.
+          </p>
+        </ImageSection>
+
+        <Section>
+          <h3 className='sub-head'>CONSTRAINTS</h3>
+          <h1>I'll believe it when I see it.</h1>
+          <p>
+            With a tight budget, the school leadership was reluctant to commit
+            resources to something that was unseen and unproven. The current
+            site was in hand and comfortable to them. I needed to show user
+            testing of the current site and the new design to get them on board.
+            Some nice photos and a video helped turn the tide as well.
+          </p>
+
+          <h3 className='sub-head no-padding'>THE RESULTS - SO FAR</h3>
+          <p>
+            While at this point the new site is still being developed, early
+            returns from the video piece I created have increased student
+            applications by 12%. So far so good!
+          </p>
+
+          <h3 className='sub-head'>WHAT I LEARNED</h3>
+          <h1>You eat first with your eyes.</h1>
+          <p>
+            Even an academic institution can use a little flare. After
+            researching, testing and all that jazz, it still goes a long way
+            just to make it pretty. A website that’s more open, clean and
+            digestible tells the user that this company is professional, sharp
+            and can be taken seriously.
+          </p>
+        </Section>
+
+        <Section center>
+          <a href='https://invis.io/F3DJK0HQJ#/253798375_Home' target='_blank'>
+            <Button style={{marginBottom: '80px'}}>SEE THE PROTOTYPE</Button>
+          </a>
+        </Section>
       </div>
-      <Footer />
+      <Footer case-study vmsa />
     </div>
   )
 }

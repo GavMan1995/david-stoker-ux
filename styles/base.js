@@ -113,6 +113,8 @@ export const Button = styled.button`
     box-shadow: 4px 4px 12px ${darkGray};
     transform: scale(1.02);
   }
+
+  ${props => props.gray ? `background-color: ${darkGray}` : ''}
 `
 
 export const Section = styled.div`
@@ -166,27 +168,18 @@ export const Section = styled.div`
   }
 
   ${props => props.center ? 'justify-content: center; align-content: center;' : ''}
+  ${props => props.smallPaddingMobile ? `
+    @media (max-width: 880px) {
+      padding: 0 10px;
+    }
+  ` : ''}
 `
 
 export const ImageSection = styled.div`
   ${flexContainer('center', 'stretch', 'stretch')}
   width: 100%;
   padding: 60px calc(50% - 700px);
-
-  ${props => props.noPaddingBottomDesktop ? `
-    @media (max-width: 600px) {
-      padding-bottom: 40px;
-    }
-
-    padding-bottom: 0;
-  ` : `
-    @media (max-width: 1440px) {
-      padding: 40px 20px;
-    }
-  `}
-
-  ${props => props.white ? 'background-color: #fff;' : `background-color: ${gray};`}
-  ${props => props.noPaddingBottom ? 'padding-bottom: 0 !important;' : ''}
+  overflow: hidden;
 
   .sub-text {
     width: 100%;
@@ -233,9 +226,7 @@ export const ImageSection = styled.div`
 
   > div {
     ${flexContainer('flex-start', 'flex-start', 'space-between')}
-    ${flexItem('600px', '1', '1', '800px')};
-    ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
-    ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
+    ${flexItem('500px', '1', '1', '800px')};
     padding: 20px;
     
     &.no-padding-bottom {
@@ -246,7 +237,38 @@ export const ImageSection = styled.div`
       width: 100%;
       height: auto;
     }
+
+    ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
+    ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
+    ${props => props.center ? 'align-content: center; align-items: center;' : ''}
+    ${props => props.noPadding ? 'padding: 0; flex-basis: 100%; min-width: 110%;' : ''}
   }
+
+  > iframe {
+    ${flexItem('600px', '1')};
+    margin-bottom: 20px;
+  }
+
+  ${props => props.smallPaddingMobile ? `
+    @media (max-width: 880px) {
+      padding: 0 10px;
+    }
+  ` : ''}
+  ${props => props.noPaddingBottomDesktop ? `
+    @media (max-width: 600px) {
+      padding-bottom: 40px;
+    }
+
+    padding-bottom: 0;
+  ` : `
+    @media (max-width: 1440px) {
+      padding: 40px 20px;
+    }
+  `}
+  ${props => props.white ? 'background-color: #fff;' : `background-color: ${gray};`}
+  ${props => props.noPaddingBottom ? 'padding-bottom: 0;' : ''}
+  ${props => props.noPadding ? 'padding: 0 !important;' : ''}
+  ${props => props.center ? 'justify-content: center; align-content: center;' : ''}
 `
 
 export const List = styled.ul`
