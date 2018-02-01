@@ -224,6 +224,12 @@ export const ImageSection = styled.div`
     }
   }
 
+  .hide-on-mobile {
+    @media (max-width: 880px) {
+      display: none;
+    }
+  }
+
   > div {
     ${flexContainer('flex-start', 'flex-start', 'space-between')}
     ${flexItem('500px', '1', '1', '800px')};
@@ -237,7 +243,8 @@ export const ImageSection = styled.div`
       width: 100%;
       height: auto;
     }
-
+    
+    ${props => props.xSmall ? 'flex-basis: 150px; max-width: 300px;' : ''}
     ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
     ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
     ${props => props.center ? 'align-content: center; align-items: center;' : ''}
@@ -247,6 +254,11 @@ export const ImageSection = styled.div`
   > iframe {
     ${flexItem('600px', '1')};
     margin-bottom: 20px;
+    min-height: 563px;
+
+    @media (max-width: 700px) {
+      min-height: 200px;
+    }
   }
 
   ${props => props.smallPaddingMobile ? `
@@ -266,7 +278,7 @@ export const ImageSection = styled.div`
     }
   `}
   ${props => props.white ? 'background-color: #fff;' : `background-color: ${gray};`}
-  ${props => props.noPaddingBottom ? 'padding-bottom: 0;' : ''}
+  ${props => props.noPaddingBottom ? 'padding-bottom: 0 !important;' : ''}
   ${props => props.noPadding ? 'padding: 0 !important;' : ''}
   ${props => props.center ? 'justify-content: center; align-content: center;' : ''}
 `

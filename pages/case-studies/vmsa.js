@@ -76,8 +76,8 @@ export default () => {
         </Section>
 
         <ImageSection white small>
-          <div><img src='/static/vmsa/persona-hanna.png' alt='David Stoker UX' /></div>
-          <div><img src='/static/vmsa/persona-kenn.png' alt='David Stoker UX' /></div>
+          <div><img src='/static/vmsa/persona-hannah.png' alt='David Stoker UX' /></div>
+          <div><img src='/static/vmsa/persona-ken.png' alt='David Stoker UX' /></div>
           <div><img src='/static/vmsa/persona-louis.png' alt='David Stoker UX' /></div>
         </ImageSection>
 
@@ -176,8 +176,7 @@ export default () => {
         <ImageSection white smallPaddingMobile>
           <iframe
             src='https://player.vimeo.com/video/196616055?color=ffffff&title=0&byline=0&portrait=0'
-            width='1000'
-            height='563' />
+            width='1000' />
 
           <p className='sub-text'>
             Video piece I shot, directed and edited for the new site.
