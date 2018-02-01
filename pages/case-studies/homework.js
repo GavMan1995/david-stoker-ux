@@ -54,6 +54,40 @@ export default () => {
           </h1>
         </Section>
 
+        <ImageSection>
+          <div><img src='/static/homework/sketch-purple-sticky-notes.png' alt='David Stoker UX' /></div>
+          <div><img src='/static/homework/sketch-yellow-sticky-notes.png' alt='David Stoker UX' /></div>
+          <p className='sub-text'>
+            Writing down problems and needs, then potential app features.
+          </p>
+        </ImageSection>
+
+        <Section>
+          <h3 className='sub-head no-padding'>PERSONAS</h3>
+        </Section>
+
+        <ImageSection white small>
+          <div><img src='/static/homework/persona-rachel.png' alt='David Stoker UX' /></div>
+          <div><img src='/static/homework/persona-jaime.png' alt='David Stoker UX' /></div>
+          <div><img src='/static/homework/persona-helen.png' alt='David Stoker UX' /></div>
+        </ImageSection>
+
+        <Section>
+          <h3 className='sub-head'>MY ROLE</h3>
+          <p>
+            With some potential users of both teens and parents, I conducted
+            sticky-note exercises to describe user problems and needs. I then
+            fleshed out potential features and functions with a developer.
+            Next, created a lo-fi, but high-fun, paper prototype to test basic
+            app flow and functionality; got valuable feedback and generated new
+            ideas between myself and those I was testing. Finally, hi-fi
+            prototyping.
+          </p>
+        </Section>
+
+        <ImageSection noPadding>
+          <div><img src='/static/homework/Sketchbook-work.png' alt='David Stoker UX' /></div>
+        </ImageSection>
         {/* <Section>
           <h3 className='sub-head'>
             PERSONAS

@@ -142,6 +142,14 @@ export const Section = styled.div`
     color: ${yellow};
     padding-bottom: 40px;
 
+    @media (max-width: 880px) {
+      padding-bottom: 20px;
+
+      &.no-padding {
+        padding: 0;
+      }
+    }
+
     &.no-padding {
       padding: 0;
     }
@@ -241,6 +249,7 @@ export const ImageSection = styled.div`
 
     @media (max-width: 880px) {
       padding: 5px;
+      ${props => props.noPadding ? 'padding: 0; flex-basis: 100%; min-width: 120%;' : ''}
     }
     
     > img {
@@ -252,7 +261,7 @@ export const ImageSection = styled.div`
     ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
     ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
     ${props => props.center ? 'align-content: center; align-items: center;' : ''}
-    ${props => props.noPadding ? 'padding: 0; flex-basis: 100%; min-width: 110%;' : ''}
+    ${props => props.noPadding ? 'padding: 0; flex-basis: 100%; min-width: 100%;' : ''}
   }
 
   > iframe {
