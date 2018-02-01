@@ -183,10 +183,12 @@ export default () => {
           </p>
         </Section>
 
-        <ImageSection small>
+        <ImageSection xSmall>
           <div><img src='/static/moviepass/Tutorial1.png' alt='David Stoker UX' /></div>
           <div><img src='/static/moviepass/Tutorial2.png' alt='David Stoker UX' /></div>
-          <div><img src='/static/moviepass/Tutorial3.png' alt='David Stoker UX' /></div>
+          <div className='hide-on-mobile'>
+            <img src='/static/moviepass/Tutorial3.png' alt='David Stoker UX' />
+          </div>
           <p className='sub-text'>
             Still too many words <br />
             My initial tutorial wasn’t completely working: orange text hard to

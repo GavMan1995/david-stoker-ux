@@ -238,6 +238,10 @@ export const ImageSection = styled.div`
     &.no-padding-bottom {
       padding-bottom: 0;
     }
+
+    @media (max-width: 880px) {
+      padding: 5px;
+    }
     
     > img {
       width: 100%;
