@@ -191,12 +191,16 @@ export const ImageSection = styled.div`
 
   .sub-text {
     width: 100%;
-    padding: 10px 80px;
+    padding: 10px 100px;
     text-align: center;
     color: ${darkGray};
 
     &.no-padding {
       padding: 0;
+    }
+
+    &.no-padding-bottom {
+      padding-bottom: 0;
     }
 
     &.left {
@@ -209,6 +213,28 @@ export const ImageSection = styled.div`
 
     @media (max-width: 880px) {
       padding: 10px 0;
+    }
+  }
+
+  .sub-text-list {
+    width: 100%;
+    padding: 0 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: ${darkGray};
+
+    &.left {
+      text-align: left;
+    }
+
+    > li {
+      list-style: disc inside;
+      padding-bottom: 5px;
+    }
+
+    @media (max-width: 880px) {
+      padding: 0;
+      padding-bottom: 10px;
     }
   }
 
@@ -257,7 +283,7 @@ export const ImageSection = styled.div`
       height: auto;
     }
     
-    ${props => props.xSmall ? 'flex-basis: 150px; max-width: 300px;' : ''}
+    ${props => props.xSmall ? 'flex-basis: 150px; max-width: 500px;' : ''}
     ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
     ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
     ${props => props.center ? 'align-content: center; align-items: center;' : ''}
