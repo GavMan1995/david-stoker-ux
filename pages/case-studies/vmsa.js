@@ -9,8 +9,8 @@ export default () => {
       <Header vmsa />
       <div>
         <CaseStudySection vmsa>
-          <h2>The Violin Making School of America</h2>
-          <p>WEBSITE REDESIGN AND MARKETING FOCUS</p>
+          <h1>The Violin Making School of America</h1>
+          <h4>WEBSITE REDESIGN AND MARKETING FOCUS</h4>
         </CaseStudySection>
 
         <Section>
@@ -83,7 +83,7 @@ export default () => {
 
         <Section>
           <h3 className='sub-head'>MY ROLE</h3>
-          <p>
+          <p className='no-padding-top'>
             I gathered initial research after interviews with students, staff
             and researching competitors. I devised objectives to improve design
             and marketing focus of the site, and proposed how they could be

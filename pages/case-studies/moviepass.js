@@ -10,7 +10,7 @@ export default () => {
       <div>
         <CaseStudySection movie>
           <h2>Moviepass</h2>
-          <p>MOBILE APP REDESIGN</p>
+          <h4>MOBILE APP REDESIGN</h4>
         </CaseStudySection>
 
         <Section>
@@ -99,7 +99,7 @@ export default () => {
 
         <Section>
           <h3 className='sub-head'>MY ROLE</h3>
-          <p>
+          <p className='no-padding-top'>
             Working with the Salt Lake chapter of the Interaction Design
             Foundation (IDF) we took on the assignment to redesign this mobile
             app and work as a group to research, give feedback on ideas, iterate,
@@ -134,7 +134,7 @@ export default () => {
 
         <Section>
           <h3 className='sub-head'>DESIGN PROCESS</h3>
-          <p>
+          <p className='no-padding-top'>
             After initial research, I tested the current app with a handful of
             people and defined areas of confusion, content and flow that was
             lacking. Then sketched out a user flow, site-map, a wireframe, and

@@ -67,7 +67,7 @@ class Header extends Component {
       <HeaderStyle style={style}>
         <Link href='/'>
           <img
-            src='/static/logo.svg'
+            src='/static/logo.png'
             style={home ? {visibility: 'hidden'} : {}}
             alt='logo' />
         </Link>

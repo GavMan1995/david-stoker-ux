@@ -10,7 +10,7 @@ export default () => {
       <div>
         <CaseStudySection homework>
           <h2>My Homework Saver</h2>
-          <p>MOBILE APP CONCEPT AND CREATION </p>
+          <h4>MOBILE APP CONCEPT AND CREATION </h4>
         </CaseStudySection>
 
         <Section>
@@ -74,7 +74,7 @@ export default () => {
 
         <Section>
           <h3 className='sub-head'>MY ROLE</h3>
-          <p>
+          <p className='no-padding-top'>
             With some potential users of both teens and parents, I conducted
             sticky-note exercises to describe user problems and needs. I then
             fleshed out potential features and functions with a developer.
@@ -91,7 +91,7 @@ export default () => {
 
         <Section>
           <h3 className='sub-head'>DESIGN PROCESS</h3>
-          <p className='border-bottom'>
+          <p className='border-bottom no-padding-top'>
             After feedback from lo-fi paper prototyping, I moved to digital
             prototype design. Testing daily as the design developed, I refined
             the interface, balancing the rather mundane ‘job-to-be-done’ with

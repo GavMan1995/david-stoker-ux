@@ -8,7 +8,9 @@ export const Contact = styled.div`
 
   > h3 {
     max-width: 600px;
-    line-height: 1.8;
+    line-height: 38px;
+    font-family: "museo-slab", sans-serif;
+    font-size: 20px;
   }
 
   > .contact-links {
@@ -22,6 +24,7 @@ export const Contact = styled.div`
     h2 {
       width: 100%;
       padding-top: 10px;
+      font-weight: 500;
     }
   }
 

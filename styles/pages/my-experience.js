@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { gray, darkGray, yellow } from '../tools/colors'
+import { gray, darkGray, gold, yellow } from '../tools/colors'
 import { flexContainer, flexItem } from '../tools/mixins'
 
 export const TimelineContainer = styled.div`
@@ -10,7 +10,7 @@ export const TimelineContainer = styled.div`
   background-color: #fff;
 
   @media (max-width: 880px) {
-    margin-bottom: 60px
+    margin-bottom: 60px;
   }
 
   &:after {
@@ -33,7 +33,6 @@ export const TimelineContainer = styled.div`
       width: 175px;
       height: 175px;
       background-color: ${gray};
-      border: 1px solid #A0A1A0;
       border-radius: 50%;
     }
 
@@ -41,6 +40,12 @@ export const TimelineContainer = styled.div`
       position: absolute;
       right: calc(50% - 220px);
       bottom: 20px;
+      font-family: "museo-slab", sans-seif;
+      font-weight: 100;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1;
+      font-style: italic;
     }
 
     @media (max-width: 880px) {
@@ -55,7 +60,7 @@ export const TimelineContainer = styled.div`
 
 export const TimeLineSection = styled.section`
   ${flexContainer()}
-  ${props => props.bottom ? 'padding: 0 calc(50% - 612px);' : 'padding: 80px calc(50% - 612px);'}
+  ${props => props.bottom ? 'padding: 0 calc(50% - 700px);' : 'padding: 80px calc(50% - 612px);'}
   position: relative;
 
   ${props => props.bottom && css`
@@ -90,9 +95,11 @@ export const TimeLineSection = styled.section`
         display: flex;
       }
 
-      > p, small {
+      > small {
+        font-size: 12px;
         width: 100%;
         text-align: center;
+        padding-bottom: 5px;
         line-height: 1;
       }
     }
@@ -105,15 +112,18 @@ export const TimeLineSection = styled.section`
 
 export const TimeLineAside = styled.aside`
   ${flexItem('250px')};
-  margin: 0 80px;
-  ${props => props.rightAside ? 'margin-left: 100px;' : 'margin-right: 100px;'}
+  margin: 0 40px;
+  ${props => props.rightAside ? 'margin-left: 130px;' : 'margin-right: 130px;'}
   position: relative;
   background-color: #fff;
   z-index: 3;
 
-  > p {
+  > p, i {
     width: 100%;
     padding-bottom: 20px;
+    font-family: "museo-slab", sans-serif;
+    font-weight: 100;
+    line-height: 26px;
 
     &:last-child, :nth-child(4) {
       padding-bottom: 0;
@@ -122,6 +132,9 @@ export const TimeLineAside = styled.aside`
 
   > h3 {
     width: 100%;
+    font-family: "museo-slab", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   > .top-img {
@@ -214,7 +227,7 @@ export const TimeLineAside = styled.aside`
 `
 
 export const AsidePlaceholder = styled.aside`
-  ${flexItem('250px')}
+  ${flexItem('300px')}
   margin: 0 100px;
 `
 
@@ -233,8 +246,10 @@ export const MiddleText = styled.div`
     width: 160px;
     padding: 4px;
     background-color: #fff;
-    color: ${yellow};
-    font-weight: 400;
+    color: ${gold};
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.25;
   }
 
   @media (max-width: 880px) {
@@ -243,7 +258,6 @@ export const MiddleText = styled.div`
 
     > p {
       margin: 10px 0;
-      font-weight: 400;
     }
   }
 `

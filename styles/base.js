@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 import { flexContainer, flexItem } from './tools/mixins'
-import { yellow, darkGray, gray } from './tools/colors'
+import { yellow, darkGray, gray, gold } from './tools/colors'
 
 export const CaseStudySection = styled.section`
   ${flexContainer('center', 'center', 'center')}
@@ -18,7 +18,12 @@ export const CaseStudySection = styled.section`
     }
   }
 
-  > h2, p {
+  > h1 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  > h2, p, h4 {
     width: 100%;
     text-align: center;
   }
@@ -99,7 +104,7 @@ export const CaseStudySection = styled.section`
 `
 
 export const Button = styled.button`
-  padding: 20px 30px;
+  padding: 14px 25px;
   background-color: ${yellow};
   color: #fff;
   border: none;
@@ -108,6 +113,9 @@ export const Button = styled.button`
   box-shadow: 2px 2px 8px ${darkGray};
   cursor: pointer;
   transition: box-shadow 0.2s, transform 0.2s;
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: 1;
 
   &:hover {
     box-shadow: 4px 4px 12px ${darkGray};
@@ -129,7 +137,10 @@ export const Section = styled.div`
 
   .small-header {
     padding-top: 40px;
-    font-weight: 800;
+    font-family: "museo-slab", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
   }
 
   .sub-head {
@@ -155,8 +166,11 @@ export const Section = styled.div`
     margin-bottom: 80px;
     padding-bottom: 10px;
     border-bottom: 1px solid #000;
-    color: ${yellow};
-    font-weight: 300;
+    color: ${gold};
+    font-weight: 500;
+    font-family: "museo-sand", sans-serif;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   > h1 {
@@ -167,7 +181,12 @@ export const Section = styled.div`
     padding-top: 40px;
     padding-bottom: 80px;
     font-size: 20px;
-    line-height: 1.93;
+    font-family: "museo-slab", sans-serif;
+    line-height: 38px;
+  }
+
+  .no-padding-top {
+    padding-top: 0;
   }
 
   ${props => props.center ? 'justify-content: center; align-content: center;' : ''}
@@ -199,6 +218,10 @@ export const ImageSection = styled.div`
     padding: 10px 100px;
     text-align: center;
     color: ${darkGray};
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2;
+    line-height: 25px;
 
     &.no-padding {
       padding: 0;
@@ -226,6 +249,10 @@ export const ImageSection = styled.div`
     padding: 0 100px;
     text-align: center;
     color: ${darkGray};
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2;
+    line-height: 25px;
 
     &.left {
       text-align: left;
@@ -334,8 +361,9 @@ export const List = styled.ul`
     padding: 15px 20px;
     padding-bottom: 0;
     font-size: 20px;
-    font-weight: 300;
-    line-height: 1.8;
+    font-weight: 500;
+    line-height: 38px;
+    color: ${darkGray};
 
     &:before {
       position: absolute;

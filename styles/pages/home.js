@@ -21,9 +21,17 @@ export const HeroAside = styled.aside`
   ${flexItem('400px')}
   width: 100%;
 
+  > img {
+    max-width: 400px;
+  }
+
   > h2 {
-    max-width: 460px;
-    color: ${gold}
+    max-width: 500px;
+    color: ${gold};
+    letter-spacing: 0.5;
+    font-weight: 300;
+    line-height: 35px;
+    font-family: "museo-sans", sans-serif;
   }
 
   @media(max-width: 800px) {
