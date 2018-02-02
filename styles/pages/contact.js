@@ -19,6 +19,10 @@ export const Contact = styled.div`
 
     .yellow {
       color: ${yellow};
+
+      @media (max-width: 880px) {
+        font-size: 22px;
+      }
     }
 
     h2 {

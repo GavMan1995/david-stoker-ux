@@ -1,13 +1,33 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-import { ImageSection, Section, CaseStudySection, List, Button } from '../../styles/base'
+import { HeaderSpacer } from '../../styles/components/header'
+import {
+  ImageSection,
+  Section,
+  CaseStudySection,
+  List,
+  Button,
+  CaseStudyTab,
+  TabSpacer
+} from '../../styles/base'
 
 export default () => {
   return (
     <div>
-      <Header vmsa />
+      <Header fixed tab />
+      <HeaderSpacer />
       <div>
+        <CaseStudyTab vmsa>
+          <div>
+            <span>
+              <small>Case Study 1</small>
+            </span>
+          </div>
+        </CaseStudyTab>
+
+        <TabSpacer />
+
         <CaseStudySection vmsa>
           <h1>The Violin Making School of America</h1>
           <h4>WEBSITE REDESIGN AND MARKETING FOCUS</h4>

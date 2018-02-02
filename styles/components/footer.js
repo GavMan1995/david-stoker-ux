@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-import { flexContainer } from '../tools/mixins'
+import { flexContainer, flexItem } from '../tools/mixins'
+import { gold, gray } from '../tools/colors'
 
 export const Footer = styled.footer`
   ${flexContainer('flex-start', 'center', 'center')}
@@ -35,4 +36,30 @@ export const Footer = styled.footer`
       padding-left: 40px;
     }
   }
+
+  > .next {
+    ${flexContainer('flex-end', 'center', 'center')}
+    ${flexItem('600px', '1')}
+
+    @media (max-width: 880px) {
+      justify-content: flex-start;
+
+      > h3 {
+        width: 100%;
+        padding-top: 40px;
+      }
+    }
+    
+    > h3 {
+      color: ${gold};
+      padding-right: 20px;
+    }
+
+    h3, p {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  ${props => props.tab ? `background-color: ${gray};` : ''}
 `

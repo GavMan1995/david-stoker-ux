@@ -63,6 +63,7 @@ small, small * {
   font-size: 11px;
   letter-spacing: 0.5;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 label, label * {

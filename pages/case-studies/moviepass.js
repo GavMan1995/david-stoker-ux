@@ -1,13 +1,33 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-import { ImageSection, Section, CaseStudySection, List, Button } from '../../styles/base'
+import { HeaderSpacer } from '../../styles/components/header'
+import {
+  ImageSection,
+  Section,
+  CaseStudySection,
+  List,
+  Button,
+  CaseStudyTab,
+  TabSpacer
+} from '../../styles/base'
 
 export default () => {
   return (
     <div>
-      <Header movie />
+      <Header fixed tab />
+      <HeaderSpacer />
       <div>
+        <CaseStudyTab movie>
+          <div>
+            <span>
+              <small>Case Study 2</small>
+            </span>
+          </div>
+        </CaseStudyTab>
+
+        <TabSpacer />
+
         <CaseStudySection movie>
           <h2>Moviepass</h2>
           <h4>MOBILE APP REDESIGN</h4>
@@ -236,7 +256,7 @@ export default () => {
           </a>
         </Section>
       </div>
-      <Footer case-study movie />
+      <Footer movie />
     </div>
   )
 }

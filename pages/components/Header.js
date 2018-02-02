@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { withRouter } from 'next/router'
 
 import { HeaderStyle, Menu, MobileMenu, Hamburger } from '../../styles/components/header'
-import { boxShadow, yellow } from '../../styles/tools/colors'
+import { darkGray, yellow } from '../../styles/tools/colors'
 
 class Header extends Component {
   constructor () {
@@ -15,7 +15,7 @@ class Header extends Component {
   }
 
   render () {
-    const { fixed, home, shadow, router } = this.props
+    const { fixed, home, shadow, router, noShadow, tab } = this.props
     const path = router.pathname
 
     let style
@@ -28,12 +28,14 @@ class Header extends Component {
 
     if (fixed && home) {
       style = {position: 'fixed'}
+    } else if (fixed && noShadow) {
+      style = {position: 'fixed', boxShadow: 'none'}
     } else if (fixed) {
-      style = {position: 'fixed', boxShadow: `inset 0 -2px 8px -2px ${boxShadow}`}
+      style = {position: 'fixed', boxShadow: `inset 0 -2px 8px -2px ${darkGray}`}
     } else if (this.state.menuOpen) {
       style = {position: 'fixed'}
     } else if (shadow) {
-      style = {boxShadow: `inset 0 -2px 8px -2px ${boxShadow}`}
+      style = {boxShadow: `inset 0 -2px 8px -2px ${darkGray}`}
     }
 
     if (path === '/contact') {
@@ -60,6 +62,41 @@ class Header extends Component {
             <h3 style={contactStyle}>CONTACT</h3>
           </Link>
         </MobileMenu>
+      )
+    }
+
+    if (tab) {
+      return (
+        <HeaderStyle tab style={style}>
+          <Link href='/'>
+            <img
+              src='/static/logo.png'
+              style={home ? {visibility: 'hidden'} : {}}
+              alt='logo' />
+          </Link>
+          <Menu>
+            <Link href='/case-studies'>
+              <a style={caseStudiesStyle}>CASE STUDIES</a>
+            </Link>
+
+            <Link prefetch href='/my-experience'>
+              <a style={myExperienceStyle}>MY EXPERIENCE</a>
+            </Link>
+
+            <Link prefetch href='/contact'>
+              <a style={contactStyle}>CONTACT</a>
+            </Link>
+          </Menu>
+
+          <Hamburger onClick={this.toggleMenu.bind(this)}>
+            <span />
+            <span />
+            <span />
+          </Hamburger>
+
+          {mobile}
+
+        </HeaderStyle>
       )
     }
 

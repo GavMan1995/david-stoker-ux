@@ -3,6 +3,68 @@ import styled, { css } from 'styled-components'
 import { flexContainer, flexItem } from './tools/mixins'
 import { yellow, darkGray, gray, gold } from './tools/colors'
 
+export const TabSpacer = styled.div`
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 -2px 8px -2px ${darkGray};
+`
+
+export const CaseStudyTab = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  box-shadow: 0px -2px 16px -2px ${darkGray};
+  z-index: 200;
+
+  > div {
+    width: 100%;
+    height: 0;
+    position: relative;
+  }
+
+  span {
+    ${flexContainer('center', 'flex-end', 'flex-end')}
+    position: absolute;
+    top: -32px;
+    left: 0;
+    width: 124px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    z-index: 2;
+    color: ${yellow};
+    font-size: 12px;
+    font-family: "museo-sans", sans-serif;
+    box-shadow: 4px -4px 8px -4px ${darkGray};
+
+    ${props => props.vmsa && css`
+      left: 30%;
+      @media(max-width: 800px) {
+          left: 20%;
+          top: -22px;
+        }
+    `}
+
+    ${props => props.movie && css`
+      left: 35%;
+      @media(max-width: 800px) {
+        left: 20%;
+        top: -22px;
+      }
+    `}
+
+    ${props => props.homework && css`
+      left: 40%;
+      @media(max-width: 800px) {
+        left: 20%;
+        top: -22px;
+      }
+    `}
+  }
+`
+
 export const CaseStudySection = styled.section`
   ${flexContainer('center', 'center', 'center')}
   position: relative;

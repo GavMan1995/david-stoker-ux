@@ -7,12 +7,12 @@ export const Hero = styled.section`
   ${flexContainer('flex-start', 'center')}
   width: 100$;
   background-color: ${gray};
-  margin-top: 80px;
+  margin-top: 78px;
   padding: 160px calc(50% - 612px);
 
   @media(max-width: 800px) {
     padding: 80px 24px;
-    margin-top: 70px;
+    margin-top: 68px;
   }
 `
 
@@ -22,7 +22,7 @@ export const HeroAside = styled.aside`
   width: 100%;
 
   > img {
-    max-width: 400px;
+    width: 80%;
   }
 
   > h2 {

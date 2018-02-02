@@ -1,13 +1,33 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-import { ImageSection, Section, CaseStudySection, List, Button } from '../../styles/base'
+import { HeaderSpacer } from '../../styles/components/header'
+import {
+  ImageSection,
+  Section,
+  CaseStudySection,
+  List,
+  Button,
+  CaseStudyTab,
+  TabSpacer
+} from '../../styles/base'
 
 export default () => {
   return (
     <div>
-      <Header movie />
+      <Header fixed tab />
+      <HeaderSpacer />
       <div>
+        <CaseStudyTab homework>
+          <div>
+            <span>
+              <small>Case Study 3</small>
+            </span>
+          </div>
+        </CaseStudyTab>
+
+        <TabSpacer />
+
         <CaseStudySection homework>
           <h2>My Homework Saver</h2>
           <h4>MOBILE APP CONCEPT AND CREATION </h4>
@@ -98,29 +118,31 @@ export default () => {
             making the experience more fun and light-hearted.
           </p>
 
-          <h2 className='small-header'>Here's what I proposed</h2>
+          <h2 className='small-header'>
+            Making the ‘job-to-be-done’ a little more easy and more fun.
+          </h2>
           <List className='border-bottom'>
             <li>
-              Don't shy away from being bold, the site is meant to excite and
-              attract new student
+              Break apart onboarding into a few screens so the process feels
+              less overwhelming and simpler
             </li>
             <li>
-              Use homepage to give strong overview of school
+              Wording throughout app can’t be stuffy and overly formal
             </li>
             <li>
-              Edit content to be more easily digested and more succinct
+              Doodle drawings relate to what teens do when they’re bored in class
             </li>
             <li>
-              Improve site design and imagery to be more clean and sophisticated
+              The drawings help the app feel more casual and fun
             </li>
             <li>
-              Highlight a few graduate successes more clearly and prominently
+              ‘Email confirmation’ screen has a different drawing and payoff each time
             </li>
             <li>
-              Video piece with short student stories to help build emotional
-              connection and appeal to applicant's hope for industry success
+              Personal Tutor: User can select a doodle character that appears
+              on info pop-ups throughout app, and wording changes with each
+              character
             </li>
-            <li>Simplify navigation</li>
           </List>
         </Section>
 
@@ -214,7 +236,7 @@ export default () => {
           </a>
         </Section>
       </div>
-      <Footer case-study movie />
+      <Footer homework />
     </div>
   )
 }
