@@ -123,11 +123,6 @@ export const Section = styled.div`
   padding: 60px calc(50% - 400px);
   padding-bottom: 0;
 
-  @media (max-width: 880px) {
-    padding: 40px;
-    padding-bottom: 0;
-  }
-
   .border-bottom {
     border-bottom: 1px solid #000;
   }
@@ -181,6 +176,16 @@ export const Section = styled.div`
       padding: 0 10px;
     }
   ` : ''}
+
+  @media (max-width: 880px) {
+    padding: 40px;
+    padding-bottom: 0;
+
+    > p {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  }
 `
 
 export const ImageSection = styled.div`
@@ -219,7 +224,6 @@ export const ImageSection = styled.div`
   .sub-text-list {
     width: 100%;
     padding: 0 100px;
-    padding-bottom: 10px;
     text-align: center;
     color: ${darkGray};
 
@@ -229,7 +233,7 @@ export const ImageSection = styled.div`
 
     > li {
       list-style: disc inside;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
     }
 
     @media (max-width: 880px) {
@@ -241,7 +245,7 @@ export const ImageSection = styled.div`
   .sub-head {
     width: 100%;
     color: ${yellow};
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .img-desktop {
