@@ -60,7 +60,8 @@ export const TimelineContainer = styled.div`
 
 export const TimeLineSection = styled.section`
   ${flexContainer()}
-  ${props => props.bottom ? 'padding: 0 calc(50% - 700px);' : 'padding: 80px calc(50% - 612px);'}
+  padding: 80px calc(50% - 650px);
+  ${props => props.bottom ? 'padding: 0 calc(50% - 700px);' : ''}
   position: relative;
 
   ${props => props.bottom && css`
@@ -99,8 +100,8 @@ export const TimeLineSection = styled.section`
         font-size: 12px;
         width: 100%;
         text-align: center;
-        padding-bottom: 5px;
-        line-height: 1;
+        padding-bottom: 10px;
+        line-height: 0.5;
       }
     }
   `}
@@ -112,8 +113,8 @@ export const TimeLineSection = styled.section`
 
 export const TimeLineAside = styled.aside`
   ${flexItem('250px')};
-  margin: 0 40px;
-  ${props => props.rightAside ? 'margin-left: 130px;' : 'margin-right: 130px;'}
+  margin: 0 80px;
+  ${props => props.rightAside ? 'margin-left: 100px;' : 'margin-right: 100px;'}
   position: relative;
   background-color: #fff;
   z-index: 3;
@@ -199,7 +200,7 @@ export const TimeLineAside = styled.aside`
     content: '';
     position: absolute;
     top: calc(-10% + 2px);
-    ${props => props.rightAside ? 'left: -28px;' : 'right: -18px;'}
+    ${props => props.rightAside ? 'left: -27px;' : 'right: -18px;'}
     width: 20px;
     height: calc(120% - 4px);
     background-color: #fff;
@@ -227,7 +228,7 @@ export const TimeLineAside = styled.aside`
 `
 
 export const AsidePlaceholder = styled.aside`
-  ${flexItem('300px')}
+  ${flexItem('250px')}
   margin: 0 100px;
 `
 
