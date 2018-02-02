@@ -125,7 +125,7 @@ export default () => {
         </Section>
 
         <Section center>
-          <a href='https://invis.io/F3DJK0HQJ#/253798375_Home' target='_blank'>
+          <a href='https://invis.io/NREG1U32F#/264792156_Logo_Screen' target='_blank'>
             <Button style={{marginBottom: '80px'}}>VIEW  THE PROTOTYPE</Button>
           </a>
         </Section>
@@ -178,9 +178,9 @@ export default () => {
         </ImageSection>
 
         <ImageSection xSmall>
-          <div><img src='/static/homework/Tutorial-homework-1.png' alt='David Stoker UX' /></div>
+          <div className='hide-on-mobile'><img src='/static/homework/Tutorial-homework-1.png' alt='David Stoker UX' /></div>
           <div><img src='/static/homework/Tutorial-homework-2.png' alt='David Stoker UX' /></div>
-          <div><img src='/static/homework/Tutorial-4.png' alt='David Stoker UX' /></div>
+          <div className='hide-on-mobile'><img src='/static/homework/Tutorial-4.png' alt='David Stoker UX' /></div>
           <div><img src='/static/homework/Tutorial-homework-3.png' alt='David Stoker UX' /></div>
           <p className='sub-text'>
             Onboarding, setup and email confirmation screens for the new app.
@@ -209,7 +209,7 @@ export default () => {
         </Section>
 
         <Section center>
-          <a href='https://invis.io/F3DJK0HQJ#/253798375_Home' target='_blank'>
+          <a href='https://invis.io/NREG1U32F#/264792156_Logo_Screen' target='_blank'>
             <Button style={{marginBottom: '80px'}}>VIEW  THE PROTOTYPE</Button>
           </a>
         </Section>
