@@ -85,7 +85,7 @@ export const CaseStudySection = styled.section`
     line-height: 42px;
   }
 
-  > h2, p, h4 {
+  > h2, p, h4, h1 {
     width: 100%;
     text-align: center;
   }
@@ -145,7 +145,7 @@ export const CaseStudySection = styled.section`
 
       @media(max-width: 800px) {
         left: 20%;
-      }      
+      }
     }
   `}
 
@@ -345,7 +345,7 @@ export const ImageSection = styled.div`
 
   .img-mobile {
     display: none;
-    
+
     @media (max-width: 600px) {
       display: initial;
     }
@@ -361,7 +361,7 @@ export const ImageSection = styled.div`
     ${flexContainer('flex-start', 'flex-start', 'space-between')}
     ${flexItem('500px', '1', '1', '800px')};
     padding: 20px;
-    
+
     &.no-padding-bottom {
       padding-bottom: 0;
     }
@@ -370,12 +370,12 @@ export const ImageSection = styled.div`
       padding: 5px;
       ${props => props.noPadding ? 'padding: 0; flex-basis: 100%; min-width: 120%;' : ''}
     }
-    
+
     > img {
       width: 100%;
       height: auto;
     }
-    
+
     ${props => props.xSmall ? 'flex-basis: 150px; max-width: 500px;' : ''}
     ${props => props.small ? 'flex-basis: 300px; max-width: 500px;' : ''}
     ${props => props.large ? 'flex-basis: 600px; max-width: 1200px;' : ''}
