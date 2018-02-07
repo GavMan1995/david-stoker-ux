@@ -25,9 +25,9 @@ export const Footer = styled.footer`
 
   @media (max-width: 880px) {
     justify-content: center;
-    padding: 40px;
+    padding: 40px 20px;
     padding-bottom: 100px;
-    
+
     > a {
       margin: 0 20px;
     }
@@ -49,7 +49,7 @@ export const Footer = styled.footer`
         padding-top: 40px;
       }
     }
-    
+
     > h3 {
       color: ${gold};
       padding-right: 20px;
