@@ -22,7 +22,7 @@ export const HeroAside = styled.aside`
   width: 100%;
 
   > img {
-    width: 80%;
+    width: 300px;
   }
 
   > h2 {
@@ -30,7 +30,7 @@ export const HeroAside = styled.aside`
     color: ${gold};
     letter-spacing: 0.5;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 34px;
     font-family: "museo-sans", sans-serif;
   }
 

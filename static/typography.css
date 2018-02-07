@@ -34,21 +34,21 @@ h1, h1 * {
 }
 
 h2, h2 * {
-  font-size: 29px;
-  line-height: 32px;
+  font-size: 25px;
+  line-height: 34px;
   font-weight: 500;
 }
 
 h3, h3 * {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.38;
   font-weight: 700;
   letter-spacing: 1.2;
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 100;
   line-height: 42px;
   letter-spacing: 1;
 }

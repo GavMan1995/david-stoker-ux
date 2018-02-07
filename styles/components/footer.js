@@ -10,7 +10,7 @@ export const Footer = styled.footer`
   background-color: #fff;
 
   > a {
-    width: 18px;
+    width: 15px;
     margin-right: 40px;
 
     > img {

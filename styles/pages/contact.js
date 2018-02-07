@@ -11,6 +11,7 @@ export const Contact = styled.div`
     line-height: 38px;
     font-family: "museo-slab", sans-serif;
     font-size: 20px;
+    font-weight: 300;
   }
 
   > .contact-links {
@@ -29,6 +30,7 @@ export const Contact = styled.div`
       width: 100%;
       padding-top: 10px;
       font-weight: 500;
+      font-size: 24px;
     }
   }
 

@@ -85,7 +85,11 @@ export const CaseStudySection = styled.section`
     line-height: 42px;
   }
 
-  > h2, p, h4 {
+  > p {
+    font-weight: 100;
+  }
+
+  > h2, p, h4, h1 {
     width: 100%;
     text-align: center;
   }
@@ -176,7 +180,7 @@ export const Button = styled.button`
   cursor: pointer;
   transition: box-shadow 0.2s, transform 0.2s;
   font-weight: 700;
-  font-size: 11.5px;
+  font-size: 10px;
   letter-spacing: 1;
 
   &:hover {
@@ -230,7 +234,7 @@ export const Section = styled.div`
     border-bottom: 1px solid #000;
     color: ${gold};
     font-weight: 500;
-    font-family: "museo-sand", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-size: 36px;
     line-height: 44px;
   }
@@ -422,7 +426,6 @@ export const List = styled.ul`
     position: relative;
     padding: 15px 20px;
     padding-bottom: 0;
-    font-size: 20px;
     font-weight: 500;
     line-height: 38px;
     color: ${darkGray};

@@ -97,7 +97,7 @@ export const TimeLineSection = styled.section`
       }
 
       > small {
-        font-size: 12px;
+        font-size: 10px;
         width: 100%;
         text-align: center;
         padding-bottom: 10px;
@@ -123,8 +123,9 @@ export const TimeLineAside = styled.aside`
     width: 100%;
     padding-bottom: 20px;
     font-family: "museo-slab", sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 26px;
+    font-size: 15px;
 
     &:last-child, :nth-child(4) {
       padding-bottom: 0;
@@ -136,6 +137,7 @@ export const TimeLineAside = styled.aside`
     font-family: "museo-slab", sans-serif;
     font-size: 20px;
     line-height: 26px;
+    font-weight: 500;
   }
 
   > .top-img {
@@ -249,7 +251,7 @@ export const MiddleText = styled.div`
     background-color: #fff;
     color: ${gold};
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.25;
   }
 

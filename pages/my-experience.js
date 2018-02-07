@@ -210,7 +210,7 @@ export default class MyExperience extends Component {
           </TimeLineSection>
 
           <TimeLineSection bottom>
-            {/* <p>READY FOR THE NEXT CHALLENGE</p> */}
+            <p>READY FOR THE NEXT CHALLENGE</p>
             <Link href='/contact'>
               <Button>CONTACT ME</Button>
             </Link>
