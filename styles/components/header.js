@@ -24,7 +24,7 @@ export const HeaderStyle = styled.header`
 
   ${props => props.tab && css`
     border-bottom: 2px solid #fff;
-    
+
     @media (max-width: 880px) {
       padding-bottom: 40px;
     }

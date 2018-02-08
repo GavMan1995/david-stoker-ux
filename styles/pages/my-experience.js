@@ -202,7 +202,7 @@ export const TimeLineAside = styled.aside`
     content: '';
     position: absolute;
     top: calc(-10% + 2px);
-    ${props => props.rightAside ? 'left: -27px;' : 'right: -18px;'}
+    ${props => props.rightAside ? 'left: -28px;' : 'right: -18px;'}
     width: 20px;
     height: calc(120% - 4px);
     background-color: #fff;
