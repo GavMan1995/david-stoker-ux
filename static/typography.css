@@ -11,7 +11,7 @@ h1, h2 {
   font-weight: 200;
 }
 
-h2, h3, h4, h5, h6,
+h3, h4, h5, h6,
 p, li, span, i {
   margin: 0;
   font-family: "museo-sans", sans-serif;
@@ -22,14 +22,14 @@ a, a * {
   color: #1f242a;
   font-size: 12px;
   font-weight: 300;
-  letter-spacing: 1.2;
+  letter-spacing: 1.2px;
   cursor: pointer;
 }
 
 h1, h1 * {
   font-size: 36px;
   font-weight: 500;
-  letter-spacing: 0.5;
+  letter-spacing: 0.5px;
   line-height: 45px;
 }
 
@@ -43,14 +43,14 @@ h3, h3 * {
   font-size: 14px;
   line-height: 1.38;
   font-weight: 700;
-  letter-spacing: 1.2;
+  letter-spacing: 1.2px;
 }
 
 h4 {
   font-size: 17px;
   font-weight: 100;
   line-height: 42px;
-  letter-spacing: 1;
+  letter-spacing: 1px;
 }
 
 p, p *, li, li *, i, i * {
@@ -61,7 +61,7 @@ p, p *, li, li *, i, i * {
 
 small, small * {
   font-size: 11px;
-  letter-spacing: 0.5;
+  letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
 }

@@ -28,7 +28,7 @@ export const HeroAside = styled.aside`
   > h2 {
     max-width: 500px;
     color: ${gold};
-    letter-spacing: 0.5;
+    letter-spacing: 0.5px;
     font-weight: 300;
     line-height: 34px;
     font-family: "museo-sans", sans-serif;

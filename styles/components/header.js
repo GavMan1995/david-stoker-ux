@@ -70,7 +70,7 @@ export const MobileMenu = styled.div`
   > h2 {
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 50px;
     color: ${yellow};
     cursor: pointer;
   }

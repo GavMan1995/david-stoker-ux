@@ -46,6 +46,7 @@ export const TimelineContainer = styled.div`
       text-align: center;
       line-height: 1;
       font-style: italic;
+      text-transform: none;
     }
 
     @media (max-width: 880px) {
@@ -66,16 +67,13 @@ export const TimeLineSection = styled.section`
 
   ${props => props.bottom && css`
     ${flexContainer('center')};
-    padding-top: 80px;
+    padding-top: 100px;
     z-index: 3;
 
-    > p {
-      width: 100%;
-      margin-bottom: 40px;
-      padding: 4px;
-      text-align: center;
-      background-color: #fff;
-      font-weight: 400;
+    div {
+      height: inherit;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
 
     > .to-top {
@@ -174,6 +172,7 @@ export const TimeLineAside = styled.aside`
       padding-bottom: 10px;
       line-height: 1.6;
       font-weight: 400;
+      font-size: 15px;
     }
 
     > small {
@@ -252,7 +251,12 @@ export const MiddleText = styled.div`
     color: ${gold};
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 1.25;
+    letter-spacing: 1.25px;
+  }
+
+  .black {
+    color: #000;
+    width: 100%;
   }
 
   @media (max-width: 880px) {

@@ -41,23 +41,24 @@ export const Footer = styled.footer`
     ${flexContainer('flex-end', 'center', 'center')}
     ${flexItem('600px', '1')}
 
-    @media (max-width: 880px) {
-      justify-content: flex-start;
-
-      > h3 {
-        width: 100%;
-        padding-top: 40px;
-      }
-    }
-
     > h3 {
       color: ${gold};
       padding-right: 20px;
     }
 
     h3, p {
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 700;
+      line-height: initial;
+    }
+
+    @media (max-width: 800px) {
+      justify-content: flex-start;
+
+      > h3 {
+        width: 100%;
+        padding-top: 40px;
+      }
     }
   }
 

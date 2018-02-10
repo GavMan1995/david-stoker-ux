@@ -41,7 +41,7 @@ export const CaseStudyTab = styled.div`
 
     ${props => props.vmsa && css`
       left: 30%;
-      @media(max-width: 800px) {
+      @media(max-width: 880px) {
           left: 20%;
           top: -22px;
         }
@@ -49,7 +49,7 @@ export const CaseStudyTab = styled.div`
 
     ${props => props.movie && css`
       left: 35%;
-      @media(max-width: 800px) {
+      @media(max-width: 880px) {
         left: 20%;
         top: -22px;
       }
@@ -57,7 +57,7 @@ export const CaseStudyTab = styled.div`
 
     ${props => props.homework && css`
       left: 40%;
-      @media(max-width: 800px) {
+      @media(max-width: 880px) {
         left: 20%;
         top: -22px;
       }
@@ -88,6 +88,10 @@ export const CaseStudySection = styled.section`
   > h2, p, h4, h1 {
     width: 100%;
     text-align: center;
+  }
+
+  > p {
+    font-weight: 100;
   }
 
   > span {
@@ -177,7 +181,7 @@ export const Button = styled.button`
   transition: box-shadow 0.2s, transform 0.2s;
   font-weight: 700;
   font-size: 10px;
-  letter-spacing: 1;
+  letter-spacing: 1px;
 
   &:hover {
     box-shadow: 4px 4px 12px ${darkGray};
@@ -282,7 +286,7 @@ export const ImageSection = styled.div`
     color: ${darkGray};
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
     line-height: 25px;
 
     &.no-padding {
@@ -313,7 +317,7 @@ export const ImageSection = styled.div`
     color: ${darkGray};
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
     line-height: 25px;
 
     &.left {
