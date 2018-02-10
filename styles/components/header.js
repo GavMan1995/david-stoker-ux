@@ -65,6 +65,7 @@ export const MobileMenu = styled.div`
     font-weight: 100;
     text-align: center;
     cursor: pointer;
+    font-size: 24px;
   }
 
   > h2 {
