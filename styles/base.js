@@ -274,7 +274,7 @@ export const Section = styled.div`
         top: 50%;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: ${darkGray};
         z-index: -1;
       }
