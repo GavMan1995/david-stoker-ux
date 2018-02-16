@@ -267,7 +267,7 @@ export const Section = styled.div`
       ${flexContainer('space-around')}
       ${flexItem('300px')};
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
 
       > span {
         position: absolute;
@@ -299,6 +299,20 @@ export const Section = styled.div`
         width: 100px;
         height: auto;
         z-index: 3;
+      }
+    }
+
+    @media (max-width: 880px) {
+      .persona-image-container {
+        width: 80px;
+
+        > img {
+          width: 80px;
+        }
+        
+        > small {
+          bottom: -40px;
+        }
       }
     }
   }
