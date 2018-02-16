@@ -29,7 +29,7 @@ export default () => {
         <TabSpacer />
 
         <CaseStudySection movie>
-          <h2>Moviepass</h2>
+          <h1>Moviepass</h1>
           <h4>MOBILE APP REDESIGN</h4>
         </CaseStudySection>
 
@@ -96,6 +96,34 @@ export default () => {
           <h3 className='sub-head'>
             PERSONAS
           </h3>
+
+          <div className='moviepass-personas-container'>
+            <div className='moviepass-persona'>
+              <div className='persona-image-container'>
+                <img src='/static/moviepass/single-persona.png' alt='David Stoker UX' />
+                <small>20-30's Single</small>
+              </div>
+
+              <div className='persona-image-container'>
+                <img src='/static/moviepass/married-no-kids-persona.png' alt='David Stoker UX' />
+                <small>Married, no kids</small>
+              </div>
+              <span />
+            </div>
+
+            <div className='moviepass-persona'>
+              <div className='persona-image-container'>
+                <img src='/static/moviepass/married-kids-persona.png' alt='David Stoker UX' />
+                <small>Married with kids</small>
+              </div>
+
+              <div className='persona-image-container'>
+                <img src='/static/moviepass/empty-nesters-persona.png' alt='David Stoker UX' />
+                <small>Empty Nesters</small>
+              </div>
+              <span />
+            </div>
+          </div>
 
           <p>
             Subscribers to Moviepass are a broad range in age and income, but

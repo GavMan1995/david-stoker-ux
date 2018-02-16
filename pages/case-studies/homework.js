@@ -29,7 +29,7 @@ export default () => {
         <TabSpacer />
 
         <CaseStudySection homework>
-          <h2>My Homework Saver</h2>
+          <h1>My Homework Saver</h1>
           <h4>MOBILE APP CONCEPT AND CREATION </h4>
         </CaseStudySection>
 

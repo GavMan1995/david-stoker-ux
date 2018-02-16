@@ -85,6 +85,10 @@ export const CaseStudySection = styled.section`
     line-height: 42px;
   }
 
+  > h2 {
+    font-size: 30px;
+  }
+
   > h2, p, h4, h1 {
     width: 100%;
     text-align: center;
@@ -253,6 +257,50 @@ export const Section = styled.div`
 
   .no-padding-top {
     padding-top: 0;
+  }
+
+  .moviepass-personas-container {
+    ${flexContainer()};
+    width: 100%;
+
+    .moviepass-persona {
+      ${flexContainer('space-around')}
+      ${flexItem('300px')};
+      position: relative;
+      margin-bottom: 40px;
+
+      > span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: ${darkGray};
+        z-index: -1;
+      }
+    }
+
+    .persona-image-container {
+      ${flexContainer('center')};
+      position: relative;
+      width: 150px;
+
+      > small {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: ${darkGray};
+      }
+
+      > img {
+        width: 100px;
+        height: auto;
+        z-index: 3;
+      }
+    }
   }
 
   ${props => props.center ? 'justify-content: center; align-content: center;' : ''}

@@ -46,7 +46,6 @@ export const TimelineContainer = styled.div`
       text-align: center;
       line-height: 1;
       font-style: italic;
-      text-transform: none;
     }
 
     @media (max-width: 880px) {
@@ -136,6 +135,7 @@ export const TimeLineAside = styled.aside`
     font-size: 20px;
     line-height: 26px;
     font-weight: 500;
+    letter-spacing: 0;
   }
 
   > .top-img {
